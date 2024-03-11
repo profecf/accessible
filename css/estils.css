@@ -11,6 +11,7 @@ h1 {
 
 h2 {
     font-size: 2em;
+    margin-top: 0px;
 }
 
 h1, h2 {
@@ -57,4 +58,25 @@ form[name="cerca"] input, form[name="cerca"] button {
 form[name="cerca"] button {
     background-color: turquoise;
     color: white;
+}
+
+/***********************/
+/**     Seccions      **/
+/***********************/
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1em;
+}
+section div {
+    width: 48%;
+}
+
+section img {
+    width: 100%;
+}
+
+.peu-foto {
+    margin-top: 0.1em;
 }
