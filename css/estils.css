@@ -33,3 +33,12 @@ nav a:hover {
     color: white;
     text-decoration: underline;
 }
+
+form[name="cerca"] input, form[name="cerca"] button {
+    padding: 0.3em 0.5em;
+}
+
+form[name="cerca"] button {
+    background-color: turquoise;
+    color: white;
+}
