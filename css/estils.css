@@ -56,8 +56,8 @@ form[name="cerca"] input, form[name="cerca"] button {
 }
 
 form[name="cerca"] button {
-    background-color: turquoise;
-    color: white;
+    background-color: skyblue;
+    color: navy;
 }
 
 /***********************/
