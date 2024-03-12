@@ -7,6 +7,7 @@
 
 	<title>Accessibilitat de dalt a baix</title>
 	<link rel="stylesheet" href="css/estils.css">
+    <script src="js/menu.js"></script>
 </head>
 
 <body>
@@ -14,7 +15,15 @@
 		<ul role="menu">
 			<li role="menuitem"><a href="index.html">Principal</a></li>
 			<li role="menuitem"><a href="caracteristiques.html">Característiques</a></li>
-			<li role="menuitem"><a href="#" aria-current="page">Widgets</a></li>
+			<li role="menuitem" class="has-submenu">
+                <a href="#" aria-current="page" aria-expanded="false">
+                    Widgets
+                </a>
+                <ul>
+                    <li>Acordió</li>
+                    <li>Alerta</li>
+                </ul>
+            </li>
 			<li role="menuitem"><a href="#">About</a></li>
 			<li role="menuitem"><a href="#">Contact us</a></li>
 		</ul>
@@ -34,7 +43,7 @@
 		</p>
 		<p>
 			És molt comú fer servir menús desplegables en tot tipus de webs. 
-            El que no és tan comú és que siguin accessibles.
+            El que no és tan comú és que siguin accessibles. Què podem fer? Continueu llegint.
 		</p>
 		<section aria-labelledby="capMenu">
 			<div>
@@ -49,7 +58,8 @@
                 <nav role="menu" aria-labelledby="menuWidgets">
                     <h3 id="menuWidgets">Widgets disponibles:</h3>
                     <ul>
-                        <li>Primer widget</li>
+                        <li>Acordió</li>
+                        <li>Alerta</li>
                     </ul>
                 </nav>
 			</div>
@@ -59,12 +69,25 @@
 						class="href">Foto d'Anete Lusina de pexels.com</a></p>
 			</div>
 		</section>
+		<section aria-labelledby="capRatoli">
+			<div class="full-width">
+				<h2 id="capRatoli">
+					Accessibilitat amb el ratolí
+				</h2>
+				<p>
+					Cal fer que el menú desplegable no s'amagi immediatament. Usuaris amb discapacitat motriu ho poden
+                    tenir difícil per accedir a les opcions amagades. Afegirem una mica de javascript. Podeu
+                    mirar el javascript associat per entendre el funcionament.
+				</p>
+			</div>
+		</section>
 	</main>
 
 	<footer role="contentinfo">
 		<hr>
 		&copy; Copyright 2024
 	</footer>
+
 </body>
 
 </html>

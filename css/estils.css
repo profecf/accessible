@@ -55,6 +55,32 @@ nav[role="navigation"] a:hover {
     text-decoration: underline;
 }
 
+nav > ul li ul { 
+    display: none; 
+}
+nav > ul li:hover ul { 
+    display: block;
+}
+
+.has-submenu button {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+}
+
+.has-submenu button > span {
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    background: url(/img/icones/dropdown-inactive.png) center;
+    background-size: contain;
+}
+
+.has-submenu:hover button > span {
+    background: url(/img/icones/dropdown-active.png) center;
+    background-size: contain;
+}
+
 form[name="cerca"] input, form[name="cerca"] button {
     padding: 0.3em 0.5em;
 }
@@ -81,6 +107,27 @@ section img {
     width: 100%;
 }
 
+/****************************/
+/**     Classes comuns     **/
+/****************************/
 .peu-foto {
     margin-top: 0.1em;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+div.full-width {
+    width: 100%;
 }
