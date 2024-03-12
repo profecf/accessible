@@ -25,7 +25,7 @@ a {
 /***********************/
 /**     Navegació     **/
 /***********************/
-nav {
+nav[role="navigation"] {
     /* posició d'elements */
     display: flex;
     justify-content: space-between;
@@ -40,17 +40,17 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
+nav[role="navigation"] ul li {
     display: inline;
     padding-inline: 1em;
 }
 
-nav a {
+nav[role="navigation"] a {
     color: wheat;
     text-decoration: none;
 }
 
-nav a:hover {
+nav[role="navigation"] a:hover {
     color: white;
     text-decoration: underline;
 }
