@@ -63,3 +63,29 @@ section img {
 div.full-width {
     width: 100%;
 }
+
+/* Etilos Alert */
+h3{
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin: 0;
+}
+#botonIcono{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: block;
+    background-color: white;
+}
+#botonIcono:hover{
+    background-color:red;
+  
+}
+#iconoAlert{
+    background-color: red;
+}
+#iconoAlert:hover{
+    background-color:black;
+  
+}
