@@ -40,14 +40,71 @@
     <header role="banner">
         <h1>Tooltip</h1>
     </header>
-
     <main role="main">
-        <button class="custom-button" id="custom-button" aria-describedby="tooltip">Hola!<span class="tooltip-text" id="tooltip" role="tooltip">Caracola!</span></button>
+        
+                <p style="text-align: center;">
+                    Exemple -> <button class="custom-button" id="custom-button" aria-describedby="tooltip">Hola!<span class="tooltip-text"
+                        id="tooltip" role="tooltip">Caracola!</span></button>
+                </p>
+                <p>
+                    És molt comú fer servir tooltips en tot tipus de webs.
+                    El que no és tan comú és que siguin accessibles. Què podem fer? Continua llegint.
+                </p>
+                <section aria-labelledby="capMenu">
+                    <div>
+                        <h2 id="capMenu">
+                            Que és un tooltip?
+                        </h2>
+                        <p>
+                            Una tooltip és una finestra emergent que mostra informació relacionada amb un element quan l'element rep el focus del teclat o el ratolí passa per sobre. Normalment apareix després d'un petit retard i desapareix quan es prem Escapa o quan el ratolí fora.
+
+Els widgets d'informació eines no reben el focus. Es pot fer un gir que contingui elements enfocables mitjançant un diàleg no modal.
+                        </p>
+                    
+                    </div>
+                    <div>
+                        <img src="img/portatil.webp" alt="Una persona utilitzant un ordinador portàtil">
+                        <p class="peu-foto"><a
+                                href="https://www.pexels.com/ca-es/foto/dona-carrer-portatil-ordinador-portatil-5239712/"
+                                class="href">Foto d'Anete Lusina de pexels.com</a></p>
+                    </div>
+                </section>
+                <section aria-labelledby="capRatoli">
+                    <div class="full-width">
+                        <h2 id="capRatoli">
+                            Accessibilitat amb el ratolí
+                        </h2>
+                        <p>
+                            
+WAI-ARIA (Accessible Rich Internet Applications) és un conjunt d'estàndards que proporcionen etiquetes addicionals per millorar l'accessibilitat dels elements en pàgines web i aplicacions. Aquesta és una breu explicació dels punts que has proporcionat:
+
+El element que serveix com a contenidor del tooltip té el rol de tooltip. Això indica que aquest element és un tooltip i ajuda als lectors de pantalla i altres tecnologies d'assistència a identificar-lo com a tal.
+
+L'element que activa el tooltip fa referència a l'element de tooltip amb aria-describedby. Aquest atribut indica quin element o elements proporcionen informació addicional sobre l'element actual. En aquest cas, s'utilitza per associar l'element que activa el tooltip amb el propi tooltip perquè els usuaris puguin accedir fàcilment a la informació proporcionada pel tooltip quan interactuen amb l'element activador.
+                        </p>
+                    </div>
+                </section>
+                <section aria-labelledby="capTeclat">
+                    <div class="full-width">
+                        <h2 id="capTeclat">
+                            Accessibilitat amb el teclat
+                        </h2>
+                        <p>
+                            Interacció del teclat
+                            Escape: descarta el tooltip.
+                            
+                            Nota
+                            El focus es manté en l'element activador mentre es mostra la informació sobre eines.
+                            Si s'invoca la informació sobre eines quan l'element activador rep el focus, s'elimina quan ja no té el focus (onBlur). Si la informació sobre eines s'invoca amb mouseIn, s'elimina amb on mouseOut.
+                        </p>
+                    </div>
+                </section>
+                
     </main>
 
     <footer role="contentinfo">
         <hr>
-        &copy; Copyright 2024 Made By -> Cristian David Nievas Lozano && Andrei George Mira 
+        &copy; Copyright 2024 Made By -> Cristian David Nievas Lozano && Andrei George Mira
     </footer>
 </body>
 
