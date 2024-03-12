@@ -1,0 +1,44 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.custom-button {
+    position: relative;
+    background-color: #007bff; /* Azul */
+    border: 2px solid #87CEFA; /* Azul claro */
+    color: white;
+    font-size: 24px; /* Tamaño de la fuente */
+    padding: 15px 30px; /* Espacio interior */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-button:hover {
+    background-color: #0056b3; /* Azul oscuro al pasar el ratón */
+  }
+  
+  .tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .custom-button:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
