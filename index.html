@@ -7,16 +7,24 @@
 
 	<title>Accessibilitat de dalt a baix</title>
 	<link rel="stylesheet" href="css/estils.css">
+	<link rel="stylesheet" href="css/nav.css">
+    <script src="js/menu.js"></script>
 </head>
 
 <body>
 	<nav role="navigation" aria-label="Principal">
 		<ul role="menu">
-			<li role="menuitem"><a href="#" aria-current="page">Principal</a></li>
+			<li role="menuitem"><a href="#" aria-current="page" >Principal</a></li>
 			<li role="menuitem"><a href="caracteristiques.html">Característiques</a></li>
-			<li role="menuitem"><a href="widgets.html">Widgets</a></li>
-			<li role="menuitem"><a href="#">About</a></li>
-			<li role="menuitem"><a href="#">Contact us</a></li>
+			<li role="menuitem" class="has-submenu">
+                <a href="widgets.html" aria-expanded="false">
+                    Widgets
+                </a>
+                <ul>
+                    <li><a href="acordio.html">Acordió</a></li>
+                    <li><a href="alerta.html">Alerta</a></li>
+                </ul>
+            </li>
 		</ul>
 		<form name="cerca" role="search">
 			<label for="cerca">Cerqueu:</label>
@@ -24,6 +32,7 @@
 			<button type="submit">Cercar</button>
 		</form>
 	</nav>
+
 	<header role="banner">
 		<h1>Portàtil o tablet?</h1>
 	</header>
