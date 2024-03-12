@@ -1,0 +1,212 @@
+
+
+
+/* modifico el color de fondo */
+body{
+    background-color: #F5E663;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  /*****ESTILOS ESPECÍFICOS PARA REMARCAR EL AREA-ICRREMT*/
+  a[aria-current="page"] {
+    color: #0D0D0D;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "cursive", serif; 
+    font-style: italic; 
+  }
+  
+  /* ESTILOS DEL NEV */
+  nav {
+    display: flex; /* Asegura que todos los elementos directos de nav estén en línea */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Alinea verticalmente los elementos */
+    background-color: #47A8BD;
+    padding: 0 10px; /* Añade un poco de espacio alrededor de todo el contenido de nav */
+  }
+  
+  nav a {
+  
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  nav a:hover {
+    background-color:  #F5E663;
+  }
+  
+  ul{
+  list-style-type: none; /* Elimina los marcadores de lista */
+  text-align: left;
+  }
+  nav ul {
+    list-style-type: none; /* Elimina los marcadores de lista */
+    display: flex; /* Dispone los elementos de la lista en línea */
+    margin: 0;
+    padding: 10;
+  }
+  
+  nav ul li {
+    padding: 10px; 
+  }
+  
+  nav ul li a:hover {
+    color: #170A38;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  /* Estilos para el formulario de búsqueda */
+  nav form {
+    display: flex; /* Alinea el formulario con los enlaces */
+    margin-right: 30px;
+    padding: 30px;
+  }
+  
+  nav input{
+    margin-right: 5px; /* Añade un poco de espacio entre el campo de texto y el botón */
+  }
+  
+  button {
+    background-color:#F5E663;
+    color: white;
+    border: none; /* Elimina el borde predeterminado */
+    padding: 10px; /* Añade un poco de espaciado interno */
+    cursor: pointer; /* Cambia el cursor para indicar que es un botón */
+  }
+  
+  nav button:hover {
+    background-color: #47A8BD;
+    border: solid 3px #F5E663;
+  }
+  
+  label {
+    display: none; /* Oculta el label ya que tiene un placeholder en el input */
+  }
+  
+  
+  /* ESTILOS DE LOS TÍTULOS */
+  header{
+    margin-top: 10px;
+    margin-left: 0 ;
+    margin-right: 0;
+    background-color: #47A8BD;
+    color: black;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+  }
+  h2{
+    font-size: 24px; /* Tamaño en píxeles */
+    font-weight: bold;
+  }
+  /* ESTILOS CUERPO PRINCIPAL */
+   main {
+    margin-top: 15px;
+    width: 90%;
+    max-width: auto; 
+    margin: auto; 
+  } 
+  main p {
+    margin-top: 15px;
+    font-size: 18px; /* Tamaño en píxeles */
+    line-height: 1.5; /* Espaciado entre líneas */
+    text-align: justify; /* Alinea el texto justificado */
+    margin-bottom: 25px; /* Añade un poco de espacio debajo de cada párrafo */
+  
+  }
+  main strong {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "cursive", serif; 
+    font-style: italic; 
+  }
+  /* ESTILOS SECCION 1 */
+  #seccion1 {
+  
+    display: flex; /* Establece un contenedor flexible */
+    align-items: flex-start; /* Alinea los elementos al principio del contenedor */
+    justify-content: space-between; /* Separa los elementos justo a los extremos */
+  }
+  #seccion2 {
+  
+    display: flex; /* Establece un contenedor flexible */
+    flex-direction: row-reverse; /* Invierte el orden de los elementos */
+    align-items: flex-start; /* Alinea los elementos al principio del contenedor */
+    justify-content: space-between; /* Separa los elementos justo a los extremos */
+  
+  }
+  #titulosecion1{
+    text-align: left;
+    background-color: #47A8BD;
+  }
+  #titulosecion2{
+    background-color: #47A8BD;
+    text-align: left;
+  }
+  
+  #titulosecion1, #articulo1 {
+  
+    flex-basis: 50%; /* Asigna un ancho base para el título y el artículo */
+  }
+  #titulosecion2, #articulo2 {
+    flex-basis: 50%; /* Asigna un ancho base para el título y el artículo */
+  }
+  
+  #articulo1 {
+  
+    display: flex; /* Establece un contenedor flexible para el texto y la figura */
+    flex-direction: column; /* Alinea el texto y la figura verticalmente */
+  }
+  #articulo2 {
+  
+    display: flex; /* Establece un contenedor flexible para el texto y la figura */
+    flex-direction: column; /* Alinea el texto y la figura verticalmente */
+  }
+  
+  
+  figure img {
+    padding: 10px;
+    width: 500px; /* Establece el ancho de la imagen a 200 píxeles */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+  }
+  #img1 {
+    
+    align-self: flex-end; /* Alinea la imagen al final del contenedor */
+    margin-left: auto; /* Empuja la imagen hacia la derecha */
+  }
+  #img2 {
+  
+    align-self: flex-start; /* Alinea la imagen al final del contenedor */
+    margin-left: auto; /* Empuja la imagen hacia la derecha */
+  }
+  
+  figure {
+    margin: 0; /* Remueve el margen predeterminado */
+  }
+  
+  figure a:hover {
+    background-color: #47A8BD;
+  }
+  figcaption {
+    text-align: center; /* Centra el texto de la leyenda */
+    margin-bottom: 25px;
+  }
+  
+  /* RESPONSIVIDAD  */
+    @media (max-width: 600px) {
+        /* *********NAV */
+        nav ul {
+        flex-direction: column; /* Apila los elementos de la lista */
+        }
+        nav form {
+        margin-left: 10; /* Centra el formulario */
+        }
+        #seccion1, #seccion2 {
+          flex-direction: column; /* Cambia la dirección de los flex items a columna */
+        }
+  
+  
+    }
