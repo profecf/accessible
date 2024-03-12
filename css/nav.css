@@ -1,0 +1,85 @@
+/***********************/
+/**     Navegació     **/
+/***********************/
+nav[role="navigation"] {
+    /* posició d'elements */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+    /* colors i text */
+    background-color: darkblue;
+    color: white;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav[role="navigation"] ul li {
+    display: inline;
+    padding-inline: 1em;
+}
+
+nav[role="navigation"] a {
+    color: wheat;
+    text-decoration: none;
+}
+
+nav[role="navigation"] a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+nav > ul li ul { 
+    display: none; 
+}
+nav > ul li:hover ul { 
+    display: block;
+}
+
+.has-submenu button {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+}
+
+.has-submenu button > span {
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    background: url(/img/icones/dropdown-inactive.png) center;
+    background-size: contain;
+}
+
+.has-submenu:hover button > span {
+    background: url(/img/icones/dropdown-active.png) center;
+    background-size: contain;
+}
+
+.has-submenu {
+    position: relative;
+}
+
+.has-submenu.open ul {
+    position: absolute;
+    left: 0px;
+    background-color: darkblue;
+    border: 1px solid white;
+    display: block !important;
+    padding-bottom: 0.3em;
+}
+
+.has-submenu.open ul li {
+    padding-top: 0.3em;
+    display: inline-block;
+}
+
+form[name="cerca"] input, form[name="cerca"] button {
+    padding: 0.3em 0.5em;
+}
+
+form[name="cerca"] button {
+    background-color: skyblue;
+    color: navy;
+}
