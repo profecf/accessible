@@ -81,6 +81,24 @@ nav > ul li:hover ul {
     background-size: contain;
 }
 
+.has-submenu {
+    position: relative;
+}
+
+.has-submenu.open ul {
+    position: absolute;
+    left: 0px;
+    background-color: darkblue;
+    border: 1px solid white;
+    display: block !important;
+    padding-bottom: 0.3em;
+}
+
+.has-submenu.open ul li {
+    padding-top: 0.3em;
+    display: inline-block;
+}
+
 form[name="cerca"] input, form[name="cerca"] button {
     padding: 0.3em 0.5em;
 }
