@@ -55,11 +55,11 @@
                     hauria de repetir les subopcions del menú en forma de llista per a que algú amb dificultats per utilitzar
                     el ratolí pugui accedir.
 				</p>
-                <nav role="menu" aria-labelledby="menuWidgets">
+                <nav aria-labelledby="menuWidgets">
                     <h3 id="menuWidgets">Widgets disponibles:</h3>
-                    <ul>
-                        <li><a href="acordio.html">Acordió</a></li>
-                        <li><a href="alerta.html">Alerta</a></li>
+                    <ul role="menubar">
+                        <li role="menuitem"><a href="acordio.html">Acordió</a></li>
+                        <li role="menuitem"><a href="alerta.html">Alerta</a></li>
                     </ul>
                 </nav>
 			</div>
@@ -76,6 +76,18 @@
 				</h2>
 				<p>
 					Cal fer que el menú desplegable no s'amagi immediatament. Usuaris amb discapacitat motriu ho poden
+                    tenir difícil per accedir a les opcions amagades. Afegirem una mica de javascript. Podeu
+                    mirar el javascript associat per entendre el funcionament.
+				</p>
+			</div>
+		</section>
+		<section aria-labelledby="capTeclat">
+			<div class="full-width">
+				<h2 id="capTeclat">
+					Accessibilitat amb el teclat
+				</h2>
+				<p>
+					Si noCal fer que el menú desplegable no s'amagi immediatament. Usuaris amb discapacitat motriu ho poden
                     tenir difícil per accedir a les opcions amagades. Afegirem una mica de javascript. Podeu
                     mirar el javascript associat per entendre el funcionament.
 				</p>
