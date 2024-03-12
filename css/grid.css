@@ -1,0 +1,80 @@
+html, body {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 15px;
+    background-color: darkblue;
+}
+
+nav {
+    margin: 5px 0 0 5vh;
+}
+
+nav a {
+    text-decoration: none;
+    color: wheat;
+    margin: 20px;
+}
+
+nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+form {
+    margin-left: 15px;
+}
+
+label {
+    color: #fff;
+}
+
+.text, .button {
+    padding: 5px;
+}
+
+.button {
+    background-color: skyblue;
+    color: navy;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    transform: translateY(-90%);
+}
+
+h1, h2 {
+    color: midnightblue;
+}
+
+p {
+    margin-top: -15px;
+    font-size: 20px;
+}
+
+.article1, .article2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 50px;
+}
+
+.contingut-article1 {
+    margin-right: 16px;
+}
+
+.contingut-article2 {
+    margin-left: 16px;
+}
+
+img {
+    width: 100%;
+}
