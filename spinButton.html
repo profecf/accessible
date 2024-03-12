@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ca-es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Accessibilitat de dalt a baix</title>
+    <link rel="stylesheet" href="css/estils.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="js/menu.js"></script>
+</head>
+
+<body>
+    <nav role="navigation" aria-label="Principal">
+        <ul role="menu">
+            <li role="menuitem"><a href="index.html" aria-current="page">Principal</a></li>
+            <li role="menuitem"><a href="caracteristiques.html">Característiques</a></li>
+            <li role="menuitem" class="has-submenu">
+                <a href="widgets.html" aria-expanded="false">
+                    Widgets
+                </a>
+                <ul>
+                    <li><a href="acordio.html">Acordió</a></li>
+                    <li><a href="alerta.html">Alerta</a></li>
+                    <li><a href="spinButton.html">Spin Button</a></li>
+                </ul>
+            </li>
+        </ul>
+        <form name="cerca" role="search">
+            <label for="cerca">Cerqueu:</label>
+            <input id="cerca" type="text" placeholder="Introduïu el text">
+            <button type="submit">Cercar</button>
+        </form>
+    </nav>
+
+    <header role="banner">
+        <h1>Spin Button</h1>
+    </header>
+
+    <main role="main">
+        <p>
+            Un "spin button" és un element d'interfície gràfica d'usuari que s'utilitza comúment en aplicacions
+            informàtiques per permetre als usuaris seleccionar un valor numèric dins d'un rang específic. Consisteix
+            típicament en una caixa de text juntament amb botons de fletxa cap amunt i cap avall, que permeten augmentar
+            o disminuir el valor mostrat a la caixa de text de manera incremental. Els usuaris poden fer clic a les
+            fletxes o utilitzar el teclat per modificar el valor, la qual cosa resulta útil per seleccionar opcions
+            numèriques de manera ràpida i precisa. Els "spin buttons" són comuns en interfícies de programari per
+            configurar ajustos com l'hora, la data, la mida de la font, entre altres.
+        </p>
+        <section aria-labelledby="capMenu">
+            <div>
+                <h2 id="capMenu">
+                    Com fer un Spin Button
+                </h2>
+                <p>
+                    Quan una opció té subopcions, per fer-ho accesible, la pàgina pare (per exemple, aquesta del
+                    widgets),
+                    hauria de repetir les subopcions del menú en forma de llista per a que algú amb dificultats per
+                    utilitzar
+                    el ratolí pugui accedir.
+                </p>
+                <nav aria-labelledby="menuWidgets">
+                    <h3 id="menuWidgets">Widgets disponibles:</h3>
+                    <ul role="menubar">
+                        <li role="menuitem"><a href="acordio.html">Acordió</a></li>
+                        <li role="menuitem"><a href="alerta.html">Alerta</a></li>
+                        <li role="menuitem"><a href="spinButton.html">Spin Button</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <img src="img/portatil.webp" alt="Una persona utilitzant un ordinador portàtil">
+                <p class="peu-foto"><a
+                        href="https://www.pexels.com/ca-es/foto/dona-carrer-portatil-ordinador-portatil-5239712/"
+                        class="href">Foto d'Anete Lusina de pexels.com</a></p>
+            </div>
+        </section>
+        <section aria-labelledby="capRatoli">
+            <div class="full-width">
+                <h2 id="capRatoli">
+                    Exemple
+                </h2>
+                <p>
+                    Cal fer que el menú desplegable no s'amagi immediatament. Usuaris amb discapacitat motriu ho poden
+                    tenir difícil per accedir a les opcions amagades. Afegirem una mica de javascript. Podeu
+                    mirar el javascript associat per entendre el funcionament.
+                </p>
+            </div>
+        </section>
+        <section aria-labelledby="capRatoli">
+            <div class="full-width">
+                <h2 id="capRatoli">
+                    Accessibilitat amb el ratolí
+                </h2>
+                <p>
+                    Cal fer que el menú desplegable no s'amagi immediatament. Usuaris amb discapacitat motriu ho poden
+                    tenir difícil per accedir a les opcions amagades. Afegirem una mica de javascript. Podeu
+                    mirar el javascript associat per entendre el funcionament.
+                </p>
+            </div>
+        </section>
+        <section aria-labelledby="capTeclat">
+            <div class="full-width">
+                <h2 id="capTeclat">
+                    Accessibilitat amb el teclat
+                </h2>
+                <p>
+                    Ens hem d'assegurar que els submenús són accessibles amb el teclat. En aquest cas, amb el botó,
+                    podem accedir als submenús a través de la tecla Enter. El comportament és el mateix que fer clic
+                    amb el ratolí i no s'ha d'afegir codi extra. En cas contrari, hauríem de capturar les tecles per
+                    executar les mateixes rutines per controlar l'accés a les opcions del submenú.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <hr>
+        &copy; Copyright 2024 | Eric Salado Zafra i Borja Montseny Peris
+    </footer>
+</body>
+
+</html>
