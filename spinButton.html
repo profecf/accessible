@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Accessibilitat de dalt a baix</title>
     <link rel="stylesheet" href="css/estils.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -34,11 +33,9 @@
             <button type="submit">Cercar</button>
         </form>
     </nav>
-
     <header role="banner">
         <h1>Spin Button</h1>
     </header>
-
     <main role="main">
         <p>
             Un "spin button" és un element d'interfície gràfica d'usuari que s'utilitza comúment en aplicacions
@@ -46,35 +43,64 @@
             típicament en una caixa de text juntament amb botons de fletxa cap amunt i cap avall, que permeten augmentar
             o disminuir el valor mostrat a la caixa de text de manera incremental. Els usuaris poden fer clic a les
             fletxes o utilitzar el teclat per modificar el valor, la qual cosa resulta útil per seleccionar opcions
-            numèriques de manera ràpida i precisa. Els "spin buttons" són comuns en interfícies de programari per
+            numèriques de manera ràpida i precisa.
+            Els "spin buttons" són comuns en interfícies de programari per
             configurar ajustos com l'hora, la data, la mida de la font, entre altres.
         </p>
         <section aria-labelledby="capMenu">
             <div>
                 <h2 id="capMenu">
-                    Com fer un Spin Button
+                    Com fer un Spin Button?
                 </h2>
-                <p>
-                    Quan una opció té subopcions, per fer-ho accesible, la pàgina pare (per exemple, aquesta del
-                    widgets),
-                    hauria de repetir les subopcions del menú en forma de llista per a que algú amb dificultats per
-                    utilitzar
-                    el ratolí pugui accedir.
-                </p>
-                <nav aria-labelledby="menuWidgets">
-                    <h3 id="menuWidgets">Widgets disponibles:</h3>
-                    <ul role="menubar">
-                        <li role="menuitem"><a href="acordio.html">Acordió</a></li>
-                        <li role="menuitem"><a href="alerta.html">Alerta</a></li>
-                        <li role="menuitem"><a href="spinButton.html">Spin Button</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
-                <img src="img/portatil.webp" alt="Una persona utilitzant un ordinador portàtil">
-                <p class="peu-foto"><a
-                        href="https://www.pexels.com/ca-es/foto/dona-carrer-portatil-ordinador-portatil-5239712/"
-                        class="href">Foto d'Anete Lusina de pexels.com</a></p>
+                <p>A continuació presentem un funcionament bàsic i senzill aplicat a hores i dies de la setmana</p>
+                <p>Originalment es fa amb un input type number, pero es podria utilitza també un un select</p>
+                <div>
+                    <p><b>input type="number"</b></p>
+                    <label for="hores">Hores →</label>
+                    <input type="number" id="hores" name="hores" value="1" min="0" max="23">
+                    <pre>
+                        &lt;label for="hores"&gt;Hores →&lt;/label&gt;
+                        &lt;input type="number" id="hores" name="hores" value="1" min="0" max="23"&gt;
+                    </pre>
+                    <table style="border: 1px solid black; border-collapse: collapse; text-align: center;">
+                        <tr>
+                            <th style="border: 1px solid black;">Valor Mínim</th>
+                            <th style="border: 1px solid black;">Valor Màxim</th>
+                            <th style="border: 1px solid black;">Valor per defecte</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black;">0</td>
+                            <td style="border: 1px solid black;">23</td>
+                            <td style="border: 1px solid black;">1</td>
+                        </tr>
+                    </table>
+                    <br>
+                </div>
+                <div>
+                    <p><b>select</b></p>
+                    <label for="diesSetmana">Dies de la setmana →</label>
+                    <select id="diesSetmana" name="diesSetmana">
+                        <option value="dilluns">Dilluns</option>
+                        <option value="dimarts">Dimarts</option>
+                        <option value="dimecres">Dimecres</option>
+                        <option value="dijous">Dijous</option>
+                        <option value="divendres">Divendres</option>
+                        <option value="dissabte">Dissabte</option>
+                        <option value="diumenge">Diumenge</option>
+                    </select>
+                    <pre>
+                        &lt;label for="diesSetmana"&gt;Dies de la setmana →&lt;/label&gt;
+                        &lt;select id="diesSetmana" name="diesSetmana"&gt;
+                            &lt;option value="dilluns"&gt;Dilluns&lt;/option&gt;
+                            &lt;option value="dimarts"&gt;Dimarts&lt;/option&gt;
+                            &lt;option value="dimecres"&gt;Dimecres&lt;/option&gt;
+                            &lt;option value="dijous"&gt;Dijous&lt;/option&gt;
+                            &lt;option value="divendres"&gt;Divendres&lt;/option&gt;
+                            &lt;option value="dissabte"&gt;Dissabte&lt;/option&gt;
+                            &lt;option value="diumenge"&gt;Diumenge&lt;/option&gt;
+                        &lt;/select&gt;
+                    </pre>
+                </div>
             </div>
         </section>
         <section aria-labelledby="capRatoli">
@@ -82,11 +108,10 @@
                 <h2 id="capRatoli">
                     Exemple
                 </h2>
-                <p>
-                    Cal fer que el menú desplegable no s'amagi immediatament. Usuaris amb discapacitat motriu ho poden
-                    tenir difícil per accedir a les opcions amagades. Afegirem una mica de javascript. Podeu
-                    mirar el javascript associat per entendre el funcionament.
-                </p>
+                <p>Ara el mateix exemple però millorat i també accessibilitat amb ratolí i teclat</p>
+                <div>
+                    AQUI VA EL PRODUCTO
+                </div>
             </div>
         </section>
         <section aria-labelledby="capRatoli">
