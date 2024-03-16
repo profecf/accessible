@@ -1,159 +1,192 @@
 <!DOCTYPE html>
 <html lang="ca-es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Libreria de iconos -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Libreria de iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
-	<title>Accessibilitat de dalt a baix</title>
-	<link rel="stylesheet" href="css/estils.css">
-    <link rel="stylesheet" href="css/estils.css">
-	<link rel="stylesheet" href="css/nav.css">
+    <title>Accessibilitat de dalt a baix</title>
+    <link rel="stylesheet" href="css/estils.css" />
+    <link rel="stylesheet" href="css/estils.css" />
+    <link rel="stylesheet" href="css/nav.css" />
     <script src="js/menu.js"></script>
-</head>
+  </head>
 
-<body>
-	<nav role="navigation" aria-label="Principal">
-		<ul role="menu">
-			<li role="menuitem"><a href="#" aria-current="page" >Principal</a></li>
-			<li role="menuitem"><a href="caracteristiques.html">Característiques</a></li>
-			<li role="menuitem" class="has-submenu">
-                <a href="widgets.html" aria-expanded="false">
-                    Widgets
-                </a>
-                <ul>
-                    <li><a href="acordio.html">Acordió</a></li>
-                    <li><a href="index.html">Indice</a></li>
-                </ul>
-            </li>
-		</ul>
-		<form name="cerca" role="search">
-			<label for="cerca">Cerqueu:</label>
-			<input id="cerca" type="text" placeholder="Introduïu el text">
-			<button type="submit">Cercar</button>
-		</form>
-	</nav>
+  <body>
+    <nav role="navigation" aria-label="Principal">
+      <ul role="menu">
+        <li role="menuitem"><a href="#" aria-current="page">Principal</a></li>
+        <li role="menuitem">
+          <a href="caracteristiques.html">Característiques</a>
+        </li>
+        <li role="menuitem" class="has-submenu">
+          <a href="widgets.html" aria-expanded="false"> Widgets </a>
+          <ul>
+            <li><a href="acordio.html">Acordió</a></li>
+            <li><a href="index.html">Indice</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form name="cerca" role="search">
+        <label for="cerca">Cerqueu:</label>
+        <input id="cerca" type="text" placeholder="Introduïu el text" />
+        <button type="submit">Cercar</button>
+      </form>
+    </nav>
 
     <main role="main">
-        <!-- Titulo principal y encabezado -->
-        <header id="tituloPrincipal" role="banner">
-          <h1>¿Qué es un alert en HTML?</h1>
-        </header>
-        <!-- texto encabezado -->
-        <article id="articuloPrincipal" role="article">
-          <p>Un alert en HTML es una ventana emergente que se utiliza para mostrar información al usuario de forma modal,
-             es decir, el usuario no puede interactuar con el resto de la página hasta que haya cerrado la ventana emergente.
+      <!-- Titulo principal y encabezado -->
+      <header id="tituloPrincipal" role="banner">
+        <h1>¿Qué es un alert en HTML?</h1>
+      </header>
+      <!-- texto encabezado -->
+      <article id="articuloPrincipal" role="article">
+        <p>
+          Un alert en HTML es una ventana emergente que se utiliza para mostrar
+          información al usuario de forma modal, es decir, el usuario no puede
+          interactuar con el resto de la página hasta que haya cerrado la
+          ventana emergente.
         </p>
-          
-        </article>
-        <!-- contenido principal -->
-        
-          <!-- seccion 1 -->
-          <section id="seccion1" role="region">
-            <div id="divSeccion1">
-              <!-- titulo arriba en la iquierda -->
-              <header id="titulosecion1">
-                <h2>¿Para qué sirve un alert?</h2>
-              </header>
-    
-              <article id="articulo1"role="article">
-                <!-- texto dejabo del titulo a la izquierda -->
-                <p>
-                    Los alerts se utilizan para:
-                    <br><br>
-                    &middot; Mostrar mensajes de error: Se pueden usar para informar al usuario de que ha habido un error al realizar una acción. <br><br>
-                    &middot; Mostrar mensajes de confirmación: Se pueden usar para confirmar que el usuario desea realizar una acción que podría tener consecuencias importantes.<br><br>
-                    &middot;Mostrar información importante: Se pueden usar para mostrar información importante al usuario, como un anuncio o una noticia.
-                </p>
-            </div>
-              <!-- esta perte a la derecha del texto ocupando lo mismo que el titulo y texto juntos de alto -->
-              <figure id="img1">
-                
-                <img
-                  src="img/mujerMeditado.jpg"
-                  alt="3 mujeres meditando sentadas en el suelo "
-                />
-                <figcaption>
-                  <ul>
-                    <li>
-                         <!--****** usar  descripción para el boton  -->
-                      <i aria-label="icono de enlace" class="fa-solid fa-link" style="color: #000000;"></i>
-                      <strong>
-                        <a href="https://pixabay.com/es"
-                          >Enlace de la imagen de las mujeres
-                        </a>
-                     </strong>
-                    </li>
-                    <li>
-                      <i aria-label="icono de enlace" class="fa-solid fa-link" style="color: #000000;"></i>           
-                      <strong>
-                        <a href="https://pixabay.com/es/service/license-summary/"
-                          >Enlace licencia imagen
-                        </a>
-                      </strong>
-                    </li>
-                  </ul>
-                 
-                 
-                </figcaption>
-              </figure>
-            </article>
-          </section>
-    
-          <section id="seccion2" role="region">
-            <!-- articulo 2 -->
-            <div id="divSeccion2">
-            <header id="titulosecion2">
-              <h2>¿Cómo se crea un alert en HTML?</h2>
-            </header>
-    <!-- poner role a los articulos -->
-            <article id="articulo2" role="article">
-              <p>
-                Un alert se crea usando la función window.alert(). 
-                Esta función toma un único argumento, que es el mensaje que se desea mostrar al usuario.
-              </p>
-              <p>Ejemplo de código.</p>
+      </article>
+      <!-- contenido principal -->
 
-            <pre><strong>
-             &lt;script&gt;
-             window.alert("¡Hola mundo!");
-            &lt;/script&gt;</strong>
-            </pre>
-            <h3>Clic aquí para ver un ejemplo de alert</h3>
-            
-        <button id="botonIcono"> <i id="iconoAlert" class="fa-solid fa-triangle-exclamation fa-shake" style="color: #d31d1d;"></i></button>
-           
-          
+      <!-- sección 1 -->
+      <section id="seccion1" role="region">
+        <div id="divSeccion1">
+          <!-- titulo arriba en la izquierda -->
+          <header id="titulosecion1">
+            <h2>¿Para qué sirve un alert?</h2>
+          </header>
+
+          <article id="articulo1" role="article">
+            <!-- texto de abajo del titulo a la izquierda -->
+            <p>
+              Los alerts se utilizan para:
+              <br /><br />
+              &middot; Mostrar mensajes de error: Se pueden usar para informar
+              al usuario de que ha habido un error al realizar una acción.
+              <br /><br />
+              &middot; Mostrar mensajes de confirmación: Se pueden usar para
+              confirmar que el usuario desea realizar una acción que podría
+              tener consecuencias importantes.<br /><br />
+              &middot;Mostrar información importante: Se pueden usar para
+              mostrar información importante al usuario, como un anuncio o una
+              noticia.
+            </p>
+          </article>
+        </div>
+        <!-- esta parte a la derecha del texto -->
+        <figure id="img1">
+          <img
+            src="img/mujerMeditado.jpg"
+            alt="3 mujeres meditando sentadas en el suelo "
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <!-- descripción para el botón -->
+                <i
+                  aria-label="icono de enlace"
+                  class="fa-solid fa-link"
+                  style="color: #000000"
+                ></i>
+                <strong>
+                  <a href="https://pixabay.com/es"
+                    >Enlace de la imagen de las mujeres</a
+                  >
+                </strong>
+              </li>
+              <li>
+                <i
+                  aria-label="icono de enlace"
+                  class="fa-solid fa-link"
+                  style="color: #000000"
+                ></i>
+                <strong>
+                  <a href="https://pixabay.com/es/service/license-summary/"
+                    >Enlace licencia imagen</a
+                  >
+                </strong>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="seccion2" role="region">
+        <!-- articulo 2 -->
+        <div id="divSeccion2">
+          <header id="titulosecion2">
+            <h2>¿Cómo se crea un alert en HTML?</h2>
+          </header>
+          <article id="articulo2" role="article">
+            <p>
+              Un alert se crea usando la función window.alert(). Esta función
+              toma un único argumento, que es el mensaje que se desea mostrar al
+              usuario.
+            </p>
+            <p>Ejemplo de código.</p>
+            <pre>
+            <strong>
+           &lt;script&gt;
+           window.alert("¡Hola mundo!");
+           &lt;/script&gt;
+            </strong>
+          </pre>
+            <div id="contenAlerts">
+              <!-- Titulo alert 1 -->
+              <h3>Clic aquí para ver un ejemplo de alert con función click</h3>
+              <!-- Boton e icono de alert -->
+              <button id="botonIcono">
+                <i
+                  id="iconoAlert"
+                  class="fa-solid fa-triangle-exclamation fa-shake"
+                ></i>
+              </button>
             </div>
-              <!-- a la  derecha-->
-              <figure id="img2">
-                <img src="img/pajaro.jpg" alt="Pájaro mirando el agua" />
-                <figcaption>
-                  <ul>
-                    <li>
-                      <i aria-label="icono de enlace" class="fa-solid fa-link" style="color: #000000;"></i>
-                      <strong>
-                        <a href="https://pixabay.com/es">Enlace de la imagen del pájaro</a>
-                      </strong>
-                    </li>
-                    <li>
-                      <i aria-label="icono de enlace" class="fa-solid fa-link" style="color: #000000;"></i>
-                     <strong>
-                      <a href="https://pixabay.com/es/service/license-summary/">Enlace licencia imagen</a>
-                    </strong>
-                    </li>
-                  </ul>
-                  
-                 
-                </figcaption>
-              </figure>
-            </article>
-          </section>
-        </main>
-        <aside role="complementary">Contenido no relacionado </aside>
-        <footer role="contentinfo">Pie de pagina</footer>
-      </body>
-    </html>
-    
+          </article>
+        </div>
+        <!-- a la derecha -->
+        <figure id="img2">
+          <img src="img/pajaro.jpg" alt="Pájaro mirando el agua" />
+          <figcaption>
+            <ul>
+              <li>
+                <i
+                  aria-label="icono de enlace"
+                  class="fa-solid fa-link"
+                  style="color: #000000"
+                ></i>
+                <strong>
+                  <a href="https://pixabay.com/es"
+                    >Enlace de la imagen del pájaro</a
+                  >
+                </strong>
+              </li>
+              <li>
+                <i
+                  aria-label="icono de enlace"
+                  class="fa-solid fa-link"
+                  style="color: #000000"
+                ></i>
+                <strong>
+                  <a href="https://pixabay.com/es/service/license-summary/"
+                    >Enlace licencia imagen</a
+                  >
+                </strong>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <aside role="complementary">Contenido no relacionado</aside>
+    <footer role="contentinfo">Pie de pagina</footer>
+  </body>
+</html>

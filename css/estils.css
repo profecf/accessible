@@ -23,7 +23,7 @@ a {
 }
 
 /***********************/
-/**     Seccions      **/
+/**     Sections      **/
 /***********************/
 section {
     display: flex;
@@ -40,7 +40,7 @@ section img {
 }
 
 /****************************/
-/**     Classes comuns     **/
+/**     Classes comunes     **/
 /****************************/
 .peu-foto {
     margin-top: 0.1em;
@@ -65,6 +65,14 @@ div.full-width {
 }
 
 /* Etilos Alert */
+#contenAlerts{
+    width: 200px;
+    height: 200px;
+  background-color: gainsboro;
+  text-align: center;
+  display: flexbox;
+ 
+}
 h3{
     text-align: center;
     color: black;
@@ -77,15 +85,18 @@ h3{
     margin: 0 auto;
     display: block;
     background-color: white;
+    border: none;
 }
 #botonIcono:hover{
     background-color:red;
   
 }
 #iconoAlert{
-    background-color: red;
+    font-size: 40px;
+    background-color: white;
 }
 #iconoAlert:hover{
     background-color:black;
+    color: white;
   
 }
