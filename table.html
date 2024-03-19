@@ -30,51 +30,56 @@
 			</form>
 		</nav>
 
-		<header role="banner">
-			<h1>Table</h1>
-		</header>
-
-		<div role="table" aria-label="Students" aria-describedby="students_table_desc">
-			<div id="students_table_desc">Table amb dades aleatories</div>
-			<div role="rowgroup">
-				<div role="row">
-					<span role="columnheader"> First Name </span>
-					<span role="columnheader"> Last Name </span>
-					<span role="columnheader"> Company </span>
-					<span role="columnheader"> Address </span>
-				</div>
-			</div>
-			<div role="rowgroup">
-				<div role="row">
-					<span role="cell"> Fred </span>
-					<span role="cell"> Jackson </span>
-					<span role="cell"> Acme, Inc. </span>
-					<span role="cell"> 123 Broad St. </span>
-				</div>
-				<div role="row">
-					<span role="cell"> Sara </span>
-					<span role="cell"> James </span>
-					<span role="cell"> Acme, Inc. </span>
-					<span role="cell"> 123 Broad St. </span>
-				</div>
-				<div role="row">
-					<span role="cell"> Ralph </span>
-					<span role="cell"> Jefferson </span>
-					<span role="cell"> XYZ, Inc. </span>
-					<span role="cell"> 456 Main St. </span>
-				</div>
-				<div role="row">
-					<span role="cell"> Nancy </span>
-					<span role="cell"> Jensen </span>
-					<span role="cell"> XYZ, Inc. </span>
-					<span role="cell"> 456 Main St. </span>
-				</div>
-			</div>
-		</div>
-
 		<main role="main">
-			<p>A aquesta pàgina tindrem la informació sobre els widgets, i la aprofitarem per explicar menús.</p>
-			<p>És molt comú fer servir menús desplegables en tot tipus de webs. El que no és tan comú és que siguin accessibles. Què podem fer? Continueu llegint.</p>
+			<header role="banner">
+				<h1>Table</h1>
+			</header>
+
+			<div role="table" aria-label="Estudiants" aria-describedby="students_table_desc">
+				<div id="students_table_desc">Taula amb dades aleatòries</div>
+				<div role="rowgroup">
+					<div role="row">
+						<span role="columnheader"> Nom </span>
+						<span role="columnheader"> Cognom </span>
+						<span role="columnheader"> Empresa </span>
+						<span role="columnheader"> Adreça </span>
+					</div>
+				</div>
+				<div role="rowgroup">
+					<div role="row">
+						<span role="cell"> Fred </span>
+						<span role="cell"> Jackson </span>
+						<span role="cell"> Acme, Inc. </span>
+						<span role="cell"> 123 Broad St. </span>
+					</div>
+					<div role="row">
+						<span role="cell"> Sara </span>
+						<span role="cell"> James </span>
+						<span role="cell"> Acme, Inc. </span>
+						<span role="cell"> 123 Broad St. </span>
+					</div>
+					<div role="row">
+						<span role="cell"> Ralph </span>
+						<span role="cell"> Jefferson </span>
+						<span role="cell"> XYZ, Inc. </span>
+						<span role="cell"> 456 Main St. </span>
+					</div>
+					<div role="row">
+						<span role="cell"> Nancy </span>
+						<span role="cell"> Jensen </span>
+						<span role="cell"> XYZ, Inc. </span>
+						<span role="cell"> 456 Main St. </span>
+					</div>
+				</div>
+			</div>
+
+			<h2 role="infoTitle">Accessibilitat</h2>
+
+			<p aria-label="Resum de les etiquetes ARIA a la taula d'estudiants">
+				La taula d'estudiants està estructurada utilitzant etiquetes ARIA per millorar l'accessibilitat. Cada fila té un contenedor amb el rol "row", mentre que cada cel·la pot tenir un rol de
+				"columnheader", "rowheader" o "cell" segons la informació que conté. També s'utilitzen atributs com aria-labelledby, aria-describedby i aria-sort per proporcionar informació addicional sobre
+				la taula i les seves parts.
+			</p>
 		</main>
 
 		<footer role="contentinfo">
