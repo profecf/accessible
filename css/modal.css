@@ -34,15 +34,18 @@
 }
 
 #openModalBtn {
-    background-color: #4CAF50; 
-    color: white; 
+    background-color: skyblue; 
     padding: 10px 20px;
     border: none; 
     border-radius: 5px; 
     cursor: pointer; 
     transition: background-color 0.3s; 
+    margin-top: 1em;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #openModalBtn:hover {
-    background-color: darkslateblue; 
+    background-color: rgb(180, 167, 248); 
 }
