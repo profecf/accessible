@@ -33,9 +33,3 @@
 [role="table"] [role="rowgroup"]:last-child [role="row"]:nth-child(odd) {
 	background-color: #ddd;
 }
-footer {
-	position: fixed;
-	bottom: 0;
-	padding: 10px;
-	width: 1200px;
-}
