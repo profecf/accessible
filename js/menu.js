@@ -67,5 +67,3 @@ window.onload = function () {
     alert("Sale cuando el ratón pasa  sobre el botón!");
   });
 };
-
-//function eventoAlert() {}
