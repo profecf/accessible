@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ca-es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Accessibilitat de dalt a baix</title>
+	<link rel="stylesheet" href="css/estils.css">
+	<link rel="stylesheet" href="css/nav.css">
+    <script src="js/menu.js"></script>
+</head>
+
+<body>
+	<nav role="navigation" aria-label="Principal">
+		<ul role="menu">
+			<li role="menuitem"><a href="index.html">Principal</a></li>
+			<li role="menuitem"><a href="caracteristiques.html" aria-current="page">Característiques</a></li>
+			<li role="menuitem" class="has-submenu">
+                <a href="widgets.html" aria-expanded="false">
+                    Widgets
+                </a>
+                <ul>
+                    <li><a href="acordio.html">Acordió</a></li>
+                    <li><a href="alerta.html">Alerta</a></li>
+                    <li><a href="radio.html">Radio</a></li>
+                </ul>
+            </li>
+		</ul>
+		<form name="cerca" role="search">
+			<label for="cerca">Cerqueu:</label>
+			<input id="cerca" type="text" placeholder="Introduïu el text">
+			<button type="submit">Cercar</button>
+		</form>
+	</nav>
+
+	<header role="banner">
+		<h1>Portàtil o tablet?</h1>
+	</header>
+
+	<main role="main">
+		<section aria-labelledby="sectionRadioButtons">
+			<h3 id="menuWidgets">Radio buttons without be checked:</h3>
+			<div role="radiogroup" class="my-radio">
+				<input type="radio" id="Radio_Buttons" name="radioWithout" value="Radio Buttons"
+                tabindex="0">
+				<label for="Radio_Buttons">Radio Buttons</label><br>
+				<input type="radio" id="Slider" name="radioWithout" value="Slider"
+                tabindex="0">
+				<label for="Slider">Slider</label><br>
+				<input type="radio" id="Acordeón" name="radioWithout" value="Acordeón"
+                tabindex="0">
+				<label for="Acordeón">Acordeón</label><br>
+			</div>
+            <h3 id="menuWidgets">Radio buttons with one selected:</h3>
+            <div role="radiogroup" class="my-radio">
+				<input type="radio" id="Radio_Buttons" name="radioSelected" value="Radio Buttons" checked
+                tabindex="0">
+				<label for="Radio_Buttons">Radio Buttons</label><br>
+				<input type="radio" id="Slider" name="radioSelected" value="Slider"
+                tabindex="0">
+				<label for="Slider">Slider</label><br>
+				<input type="radio" id="Acordeón" name="radioSelected" value="Acordeón"
+                tabindex="0">
+				<label for="Acordeón">Acordeón</label><br>
+			</div>
+		</section>
+	</main>
+
+	<footer role="contentinfo">
+		<hr>
+		&copy; Copyright 2024
+	</footer>
+</body>
+
+</html>
