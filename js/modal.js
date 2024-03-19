@@ -11,7 +11,7 @@ modalBtn.onclick = function() {
 
 // Cuando se haga clic en la "x" dentro del modal, ciérralo
 var closeModal = document.getElementsByClassName("close")[0];
-closeModal.onclick = function() {
+closeModal.onclick = function() {   
     modal.style.display = "none";
 }
 
