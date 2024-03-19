@@ -22,6 +22,10 @@ a {
     color: darkslateblue;
 }
 
+footer {
+    margin-bottom: 1.5em;
+}
+
 /***********************/
 /**     Seccions      **/
 /***********************/
@@ -31,11 +35,16 @@ section {
     align-items: flex-start;
     margin-bottom: 1em;
 }
-section div {
+
+section img {
+    width: 100%;
+}
+
+div.half-width {
     width: 48%;
 }
 
-section img {
+div.full-width {
     width: 100%;
 }
 
@@ -58,8 +67,4 @@ section img {
     position: absolute;
     width: 1px;
     white-space: nowrap;
-}
-
-div.full-width {
-    width: 100%;
 }
