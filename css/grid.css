@@ -1,32 +1,65 @@
 html, body {
     margin: 0 auto;
-    width: 95%;
+    width: 100%;
 }
 
-.header {
+header, main {
+    margin: 0 auto;
+    width: 90%;
+} 
+
+/*Separar per columnes amb grid*/
+header {
     display: grid;
     grid-template-columns: 70% 30%;
-    padding: 15px;
     background-color: darkblue;
 }
 
-nav {
-    margin: 5px 0 0 5vh;
-}
-
-nav a {
+nav ul a {
     text-decoration: none;
     color: wheat;
     margin: 20px;
 }
 
-nav a:hover {
+nav ul li {
+    list-style: none;
+}
+
+nav ul a:hover {
     color: #fff;
     text-decoration: underline;
 }
 
+/*Desplegable amagat amb els seus estils*/
+.desplegable {
+    display: none;
+    list-style: none;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 5%;
+    left: 26%;
+    background-color: darkblue;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.desplegable li {
+    padding: 2.5px;
+    margin: 2.5px;
+}
+
+.desplegable:hover {
+    display: block;
+}
+
+/*Mostrar desplegable al pasar el ratoli per widgets*/
+nav ul a:nth-child(3):hover + .desplegable {
+    display: block;
+}
+
 form {
-    margin-left: 15px;
+    margin: 10px 0 0 15px;
 }
 
 label {
@@ -77,4 +110,20 @@ p {
 
 img {
     width: 100%;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 20px;
+}
+
+footer p {
+    font-size: 16px;
 }
