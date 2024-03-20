@@ -156,7 +156,3 @@ strong a{
 ul {
     list-style-type: none; 
   }
-  strong a:hover{
-    background-color:black;
-    color: white;
-}
