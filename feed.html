@@ -56,69 +56,75 @@
 
         <section aria-labelledby="aria-roles">
             <h2 id="aria-roles">Rols, Estats i Propietats WAI-ARIA</h2>
-            <p>Informació detallada sobre la implementació dels rols, estats i propietats WAI-ARIA per a
-                millorar l'accessibilitat del feed.</p>
+            <ul>
+                <li>L'element que conté el conjunt d'articles del feed té el rol de feed.</li>
+                <li>Si el feed té una etiqueta visible, l'element de feed té aria-labelledby referint a l'element que
+                    conté el títol. D'altra banda, l'element de feed té una etiqueta especificada amb aria-label.</li>
+                <li>Cada unitat de contingut en un feed està continguda en un element amb rol article. Tot el contingut
+                    dins del feed està contingut en un element article.</li>
+                <li>Cada element article té aria-labelledby referint a elements dins de l'article que poden servir com a
+                    etiqueta distintiva.</li>
+            </ul>
         </section>
 
-        <div role="feed" aria-label="Llista de productes" aria-busy="false">
-            <!-- Articles del feed aquí -->
-            <article class="card" role="article" aria-posinset="1" tabindex="0" aria-labelledby="card-title1"
-                aria-describedby="card-subtitle1" aria-setsize="4">
+        <h2>Exemple de feed:</h2>
+        <div id="products" role="feed" aria-label="Llista de productes" aria-busy="false">
+            <div class="card" role="article" aria-posinset="1" tabindex="0" aria-labelledby="restaurant-name"
+                aria-describedby="card-title card-subtitle card-price card-img" aria-setsize="4">
                 <div class="card-img">
                     <div class="img"></div>
                 </div>
-                <h3 id="card-title1">Pantalons Vaquers</h3>
-                <p id="card-subtitle1">Estil casual per al dia a dia. Disponible en diversos colors i
-                    talles.</p>
+                <div class="card-title">Pantalons Vaquers</div>
+                <div class="card-subtitle">Estil casual per al dia a dia. Disponible en diversos colors i talles.</div>
                 <hr class="card-divider">
                 <div class="card-footer">
                     <div class="card-price"><span>€</span> 39.99</div>
                     <button class="card-btn">Veure Detalls</button>
                 </div>
-            </article>
+            </div>
 
-            <article class="card" role="article" aria-posinset="2" tabindex="0" aria-labelledby="card-title2"
-                aria-describedby="card-subtitle2" aria-setsize="4">
+            <div class="card" role="article" aria-posinset="2" tabindex="0" aria-labelledby="restaurant-name"
+                aria-describedby="card-title card-subtitle card-price card-img" aria-setsize="4">
                 <div class="card-img">
                     <div class="img"></div>
                 </div>
-                <h3 id="card-title2">Samarreta</h3>
-                <p id="card-subtitle2">Perfecta per a l'estiu. Material transpirable i còmode.</p>
+                <div class="card-title">Samarreta</div>
+                <div class="card-subtitle">Perfecta per a l'estiu. Material transpirable i còmode.</div>
                 <hr class="card-divider">
                 <div class="card-footer">
                     <div class="card-price"><span>€</span> 19.99</div>
                     <button class="card-btn">Veure Detalls</button>
                 </div>
-            </article>
+            </div>
 
-            <article class="card" role="article" aria-posinset="3" tabindex="0" aria-labelledby="card-title3"
-                aria-describedby="card-subtitle3" aria-setsize="4">
+            <div class="card" role="article" aria-posinset="3" tabindex="0" aria-labelledby="restaurant-name"
+                aria-describedby="card-title card-subtitle card-price card-img" aria-setsize="4">
                 <div class="card-img">
                     <div class="img"></div>
                 </div>
-                <h3 id="card-title3">Sabatilles Esportives</h3>
-                <p id="card-subtitle3">Ideal per córrer o fer exercici. Disseny modern i ergonòmic.</p>
+                <div class="card-title">Sabatilles Esportives</div>
+                <div class="card-subtitle">Ideal per córrer o fer exercici. Disseny modern i ergonòmic.</div>
                 <hr class="card-divider">
                 <div class="card-footer">
                     <div class="card-price"><span>€</span> 49.99</div>
                     <button class="card-btn">Veure Detalls</button>
                 </div>
-            </article>
+            </div>
 
-            <article class="card" role="article" aria-posinset="4" tabindex="0" aria-labelledby="card-title4"
-                aria-describedby="card-subtitle4" aria-setsize="4">
+            <div class="card" role="article" aria-posinset="4" tabindex="0" aria-labelledby="restaurant-name"
+                aria-describedby="card-title card-subtitle card-price card-img" aria-setsize="4">
                 <div class="card-img">
                     <div class="img"></div>
                 </div>
-                <h3 id="card-title4">Jaqueta d'Hivern</h3>
-                <p id="card-subtitle4">Us manté calent en els dies freds. Resistenta al vent i a la pluja.
-                </p>
+                <div class="card-title">Jaqueta d'Hivern</div>
+                <div class="card-subtitle">Us manté calent en els dies freds. Resistenta al vent i a la pluja.</div>
                 <hr class="card-divider">
                 <div class="card-footer">
                     <div class="card-price"><span>€</span> 79.99</div>
                     <button class="card-btn">Veure Detalls</button>
                 </div>
-            </article>
+            </div>
+
         </div>
     </main>
 </body>
