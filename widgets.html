@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="ca-es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>Accessibilitat de dalt a baix</title>
 	<link rel="stylesheet" href="css/estils.css">
 	<link rel="stylesheet" href="css/nav.css">
-    <script src="js/menu.js"></script>
+	<script src="js/menu.js"></script>
 </head>
 
 <body>
@@ -17,15 +18,15 @@
 			<li role="menuitem"><a href="index.html">Principal</a></li>
 			<li role="menuitem"><a href="caracteristiques.html">Característiques</a></li>
 			<li role="menuitem" class="has-submenu">
-                <a href="#" aria-current="page" aria-expanded="false">
-                    Widgets
-                </a>
-                <ul>
-                    <li><a href="acordio.html">Acordió</a></li>
-                    <li><a href="alerta.html">Alerta</a></li>
+				<a href="#" aria-current="page" aria-expanded="false">
+					Widgets
+				</a>
+				<ul>
+					<li><a href="acordio.html">Acordió</a></li>
+					<li><a href="alerta.html">Alerta</a></li>
 					<li><a href="tabs.html">Tabs</a></li>
-                </ul>
-            </li>
+				</ul>
+			</li>
 		</ul>
 		<form name="cerca" role="search">
 			<label for="cerca">Cerqueu:</label>
@@ -43,8 +44,8 @@
 			A aquesta pàgina tindrem la informació sobre els widgets, i la aprofitarem per explicar menús.
 		</p>
 		<p>
-			És molt comú fer servir menús desplegables en tot tipus de webs. 
-            El que no és tan comú és que siguin accessibles. Què podem fer? Continueu llegint.
+			És molt comú fer servir menús desplegables en tot tipus de webs.
+			El que no és tan comú és que siguin accessibles. Què podem fer? Continueu llegint.
 		</p>
 		<section aria-labelledby="capMenu">
 			<div>
@@ -52,21 +53,25 @@
 					Repetir el menú a la pàgina pare
 				</h2>
 				<p>
-					Quan una opció té subopcions, per fer-ho accesible, la pàgina pare (per exemple, aquesta del widgets),
-                    hauria de repetir les subopcions del menú en forma de llista per a que algú amb dificultats per utilitzar
-                    el ratolí pugui accedir.
+					Quan una opció té subopcions, per fer-ho accesible, la pàgina pare (per exemple, aquesta del
+					widgets),
+					hauria de repetir les subopcions del menú en forma de llista per a que algú amb dificultats per
+					utilitzar
+					el ratolí pugui accedir.
 				</p>
-                <nav aria-labelledby="menuWidgets">
-                    <h3 id="menuWidgets">Widgets disponibles:</h3>
-                    <ul role="menubar">
-                        <li role="menuitem"><a href="acordio.html">Acordió</a></li>
-                        <li role="menuitem"><a href="alerta.html">Alerta</a></li>
-                    </ul>
-                </nav>
+				<nav aria-labelledby="menuWidgets">
+					<h3 id="menuWidgets">Widgets disponibles:</h3>
+					<ul role="menubar">
+						<li role="menuitem"><a href="acordio.html">Acordió</a></li>
+						<li role="menuitem"><a href="alerta.html">Alerta</a></li>
+						<li role="menuitem"><a href="tabs.html">Tabs</a></li>
+					</ul>
+				</nav>
 			</div>
 			<div>
 				<img src="img/portatil.webp" alt="Una persona utilitzant un ordinador portàtil">
-				<p class="peu-foto"><a href="https://www.pexels.com/ca-es/foto/dona-carrer-portatil-ordinador-portatil-5239712/"
+				<p class="peu-foto"><a
+						href="https://www.pexels.com/ca-es/foto/dona-carrer-portatil-ordinador-portatil-5239712/"
 						class="href">Foto d'Anete Lusina de pexels.com</a></p>
 			</div>
 		</section>
@@ -77,8 +82,8 @@
 				</h2>
 				<p>
 					Cal fer que el menú desplegable no s'amagi immediatament. Usuaris amb discapacitat motriu ho poden
-                    tenir difícil per accedir a les opcions amagades. Afegirem una mica de javascript. Podeu
-                    mirar el javascript associat per entendre el funcionament.
+					tenir difícil per accedir a les opcions amagades. Afegirem una mica de javascript. Podeu
+					mirar el javascript associat per entendre el funcionament.
 				</p>
 			</div>
 		</section>
@@ -89,9 +94,9 @@
 				</h2>
 				<p>
 					Ens hem d'assegurar que els submenús són accessibles amb el teclat. En aquest cas, amb el botó,
-                    podem accedir als submenús a través de la tecla Enter. El comportament és el mateix que fer clic
-                    amb el ratolí i no s'ha d'afegir codi extra. En cas contrari, hauríem de capturar les tecles per
-                    executar les mateixes rutines per controlar l'accés a les opcions del submenú.
+					podem accedir als submenús a través de la tecla Enter. El comportament és el mateix que fer clic
+					amb el ratolí i no s'ha d'afegir codi extra. En cas contrari, hauríem de capturar les tecles per
+					executar les mateixes rutines per controlar l'accés a les opcions del submenú.
 				</p>
 			</div>
 		</section>
