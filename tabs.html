@@ -1,11 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca-es">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabs</title>
+    <title>Widget Tabs</title>
+    <link rel="stylesheet" href="css/estils.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="js/menu.js" defer></script>
 </head>
+
 <body>
-    
+    <nav role="navigation" aria-label="Principal">
+        <ul role="menu">
+            <li role="menuitem"><a href="index.html">Principal</a></li>
+            <li role="menuitem"><a href="caracteristiques.html" aria-current="page">Característiques</a></li>
+            <li role="menuitem" class="has-submenu">
+                <a href="widgets.html" aria-expanded="false">
+                    Widgets
+                </a>
+                <ul>
+                    <li><a href="acordio.html">Acordió</a></li>
+                    <li><a href="alerta.html">Alerta</a></li>
+                    <li><a href="tabs.html" aria-current="page">Tabs</a></li>
+                </ul>
+            </li>
+        </ul>
+        <form name="cerca" role="search">
+            <label for="cerca">Cerqueu:</label>
+            <input id="cerca" type="text" placeholder="Introduïu el text">
+            <button type="submit">Cercar</button>
+        </form>
+    </nav>
+
+    <header role="banner">
+        <h1>Widget Tabs</h1>
+    </header>
+
+    <main role="main">
+        <section aria-labelledby="capDefinicio">
+            <div>
+                <h2 id="capDefinicio">
+                    Què són?
+                </h2>
+                <p>
+                    Els tabs són un conjunt de seccions superposades de contingut, conegudes com a panells de pestanya,
+                    que
+                    mostren un panell de contingut cada vegada. Cada panell de pestanya té un element de pestanya
+                    associat, que,
+                    quan s'activa, mostra el panell. La llista d'elements de pestanya està disposada al llarg d'un vora
+                    del
+                    panell actualment mostrat, més comúment el vora superior.
+                </p>
+                <p>
+                    Els termes utilitzats per descriure aquest patró de disseny inclouen:
+                </p>
+                <ul>
+                    <li><strong>Tabs o Interfície de pestanyes:</strong> un conjunt d'elements de pestanya i els seus
+                        panells de pestanya associats.</li>
+                    <li><strong>Llista de pestanyes:</strong> un conjunt d'elements de pestanya continguts en un element
+                        de
+                        llista de pestanyes.</li>
+                    <li><strong>Pestanya:</strong> un element a la llista de pestanyes que serveix com a etiqueta per a
+                        un
+                        dels panells de pestanya i es pot activar per mostrar aquest panell.</li>
+                    <li><strong>Panell de pestanya:</strong> l'element que conté el contingut associat amb una pestanya.
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <img src="img/portatil-taula.jpg" alt="Portàtil damunt d'una taula amb un mòvil i una llibreta">
+                <p class="peu-foto"><a
+                        href="https://pixabay.com/es/photos/computadora-port%C3%A1til-tel%C3%A9fono-m%C3%B3vil-1839876/"
+                        target="_blank" class="href">Foto de Pexels de pixabay.com</a></p>
+            </div>
+        </section>
+        <h2 id="capExemples">
+            Exemples
+        </h2>
+        <div>
+            <p>
+                Quan una interfície de pestanyes s'inicialitza, un panell de pestanya es mostra i la seva pestanya
+                associada
+                s'estil·litza per indicar que està activa. Quan l'usuari activa un dels altres elements de pestanya, el
+                panell de pestanya anteriorment mostrat es amaga, el panell de pestanya associat amb la pestanya
+                activada es
+                fa visible i la pestanya es considera "activa".
+            </p>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <hr>
+        &copy; Copyright 2024
+    </footer>
 </body>
+
 </html>
