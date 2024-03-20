@@ -79,4 +79,8 @@ ul[role="tree"] {
     background-color: #ddd;
     border-left: 5px solid #333;
   }
+
+  .icon {
+    width: 20px;
+  }
   
