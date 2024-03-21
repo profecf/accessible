@@ -1,6 +1,7 @@
 html, body {
     margin: 0 auto;
     width: 100%;
+    text-align: justify;
 }
 
 header, main {
@@ -13,6 +14,10 @@ header {
     display: grid;
     grid-template-columns: 70% 30%;
     background-color: darkblue;
+}
+
+button, svg {
+    display: none;
 }
 
 nav ul a {

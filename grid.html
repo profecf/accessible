@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/grid-movil.css" media="only screen and (max-width: 768px)">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="hamburger">
+                    <path fill="#fff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                </svg>
+            </button>
+            <ul id="contingut-nav">
                 <a href="index.html">Principal</a>
                 <a href="caracteristiques.html">Característiques</a>
                 <a href="widgets.html">Widgets</a>
@@ -23,9 +29,14 @@
         </nav>
         <form action="#">
             <label for="Buscar">Cerqueu:</label>
-            <input type="text" name="text" id="text" class="text" placeholder="Introduïu el text">
-            <input type="submit" class="button" value="Cercar">
+            <input type="text" name="text" id="text" class="text" placeholder="Introduïu el text" id="text">
+            <input type="submit" class="button" value="Cercar" id="button">
         </form>
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="lupa" id="lupa">
+                <path fill="#fff" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+            </svg>        
+        </button>
     </header>
     <main>
         <section>
@@ -85,5 +96,6 @@
         <h3>Daniel Calzada Rubio | Antonio Ruiz Tapia</h3>
         <p>2024 Todos los derechos reservados.</p>
     </footer>
+    <script src="js/grid.js"></script>
 </body>
 </html>

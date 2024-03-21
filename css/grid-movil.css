@@ -1,0 +1,83 @@
+html, body {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+button {
+    display: block;
+    background-color: darkblue;
+    border: 1px solid transparent;
+}
+
+svg {
+    display: block;
+    width: 20%;
+    margin: 25px;
+}
+
+svg:hover {
+    cursor: pointer;
+}
+
+nav ul {
+    display: none;
+    margin-top: -30px;
+    transform: translateX(-17.5%);
+}
+
+nav ul a {
+    display: grid;
+}
+
+.desplegable {
+    transform: translateY(45%);
+}
+
+.lupa {
+    width: 20%;
+    margin-left: 90px;
+}
+
+form {
+    margin-top: 25px;
+}
+
+label, input {
+    display: none;
+    margin: 0 auto;
+}
+
+main {
+    width: 80%;
+}
+
+.article1, .article2 {
+    display: block;
+}
+
+.article2 aside {
+    margin-bottom: 50px;
+}
+
+.contingut-article1, .contingut-article2 {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
