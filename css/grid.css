@@ -1,35 +1,26 @@
-/*Configuracións generals*/
 html,
-body,
+body {
+    margin: 0 auto;
+    width: 100%;
+    text-align: justify;
+}
+
 header,
 main {
     margin: 0 auto;
     width: 90%;
 }
 
-html,
-body {
-    width: 100%;
-    text-align: justify;
-}
-
-/*Configuració per al header*/
 header {
     display: grid;
     grid-template-columns: 70% 30%;
     background-color: darkblue;
 }
 
-/*Amaguem botons i SVGs per defecte*/
+/* Ocultem els elements button y svg */
 button,
-svg,
-.desplegable {
+svg {
     display: none;
-}
-
-/*Configuració per als enllaços de la navegació*/
-nav ul {
-    list-style: none;
 }
 
 nav ul a {
@@ -38,14 +29,17 @@ nav ul a {
     margin: 20px;
 }
 
-nav ul a:hover,
-.desplegable:hover {
+nav ul li {
+    list-style: none;
+}
+
+nav ul a:hover {
     color: #fff;
     text-decoration: underline;
 }
 
-/*Configuració per al menú desplegable*/
 .desplegable {
+    display: none;
     list-style: none;
     border: 1px solid #fff;
     position: absolute;
@@ -61,18 +55,22 @@ nav ul a:hover,
     margin: 2.5px;
 }
 
-/*Mostrem el menú desplegable al passar el ratolí per sobre*/
+/* Mostrem el menú desplegable al passar el ratolí por damunt */
+.desplegable:hover {
+    display: block;
+}
+
+/* Mostrem el menú desplegable al passar el ratolí per el tercer enllaç dins del nav */
 nav ul a:nth-child(3):hover+.desplegable {
     display: block;
 }
 
-/*Configuració per al formulari*/
+/* Configurem el margen del formulari */
 form {
     margin: 10px 0 0 15px;
 }
 
-label,
-footer {
+label {
     color: #fff;
 }
 
@@ -86,7 +84,6 @@ footer {
     color: navy;
 }
 
-/*Configuració per als títols*/
 h1 {
     font-size: 4em;
     text-align: center;
@@ -102,13 +99,11 @@ h2 {
     color: midnightblue;
 }
 
-/*Configuració per als paràgrafs*/
 p {
     margin-top: -15px;
     font-size: 20px;
 }
 
-/*Configuració per als articles*/
 .article1,
 .article2 {
     display: grid;
@@ -116,22 +111,24 @@ p {
     margin-top: 50px;
 }
 
+/* Configurem el espai entre les imatges i el text*/
 .contingut-article1 {
-    margin-right: 16px;
+    margin-right: 18px;
 }
 
 .contingut-article2 {
-    margin-left: 16px;
+    margin-left: 18px;
 }
 
-/*Configuració per a les imatges*/
+/* Establece la anchura de las imágenes */
 img {
     width: 100%;
 }
 
-/*Disseny del footer*/
+/* Configurem el footer */
 footer {
     background-color: #222;
+    color: #fff;
     margin-top: 40px;
     padding: 20px;
     text-align: center;
