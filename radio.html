@@ -8,6 +8,7 @@
 	<title>Accessibilitat de dalt a baix</title>
 	<link rel="stylesheet" href="css/estils.css">
 	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/radio.css">
     <script src="js/menu.js"></script>
 </head>
 
@@ -15,15 +16,15 @@
 	<nav role="navigation" aria-label="Principal">
 		<ul role="menu">
 			<li role="menuitem"><a href="index.html">Principal</a></li>
-			<li role="menuitem"><a href="caracteristiques.html" aria-current="page">Característiques</a></li>
+			<li role="menuitem"><a href="caracteristiques.html">Característiques</a></li>
 			<li role="menuitem" class="has-submenu">
                 <a href="widgets.html" aria-expanded="false">
                     Widgets
                 </a>
                 <ul>
-                    <li><a href="acordio.html">Acordió</a></li>
-                    <li><a href="alerta.html">Alerta</a></li>
-                    <li><a href="radio.html">Radio</a></li>
+                    <li role="menuitem"><a href="acordio.html">Acordió</a></li>
+                    <li role="menuitem"><a href="alerta.html">Alerta</a></li>
+					<li role="menuitem"><a href="#" aria-current="page">Radio</a></li>
                 </ul>
             </li>
 		</ul>
@@ -35,36 +36,62 @@
 	</nav>
 
 	<header role="banner">
-		<h1>Portàtil o tablet?</h1>
+		<h1>Radio group</h1>
 	</header>
 
 	<main role="main">
-		<section aria-labelledby="sectionRadioButtons">
-			<h3 id="menuWidgets">Radio buttons without be checked:</h3>
-			<div role="radiogroup" class="my-radio">
-				<input type="radio" id="Radio_Buttons" name="radioWithout" value="Radio Buttons"
-                tabindex="0">
-				<label for="Radio_Buttons">Radio Buttons</label><br>
-				<input type="radio" id="Slider" name="radioWithout" value="Slider"
-                tabindex="0">
-				<label for="Slider">Slider</label><br>
-				<input type="radio" id="Acordeón" name="radioWithout" value="Acordeón"
-                tabindex="0">
-				<label for="Acordeón">Acordeón</label><br>
+
+		<div class="grid-div col2">
+			<h3>Explicación de accesibilidad en este widget</h3>
+			<p>Para acceder a un radiogroup se hace con el tabulador, esto detecta que es un grupo y puedes moverte a traves de el com las flechas del teclado</p>
+		</div>
+		
+		<div class="grid-div col2">
+			<h3 id="menuWidgets">Radio default:</h3>
+			<div class="center-radio-group">
+				<input type="radio" id="Default_Radio_1" name="radioButtonDefault" value="1">
+				<label for="Default_Radio_1">Default Radio 1</label>
+				<input type="radio" id="Default_Radio_2" name="radioButtonDefault" value="2">
+				<label for="Default_Radio_2">Default Radio 2</label>
+				<input type="radio" id="Default_Radio_3" name="radioButtonDefault" value="3">
+				<label for="Default_Radio_3">Default Radio 3</label>
 			</div>
-            <h3 id="menuWidgets">Radio buttons with one selected:</h3>
-            <div role="radiogroup" class="my-radio">
-				<input type="radio" id="Radio_Buttons" name="radioSelected" value="Radio Buttons" checked
-                tabindex="0">
-				<label for="Radio_Buttons">Radio Buttons</label><br>
-				<input type="radio" id="Slider" name="radioSelected" value="Slider"
-                tabindex="0">
-				<label for="Slider">Slider</label><br>
-				<input type="radio" id="Acordeón" name="radioSelected" value="Acordeón"
-                tabindex="0">
-				<label for="Acordeón">Acordeón</label><br>
+		</div>
+		
+		<div class="grid-div col2">
+			<h3 id="menuWidgets">Radio with ARIA attributes:</h3>
+			<div class="center-radio-group" role="radiogroup">
+				<input type="radio" id="ARIA_Radio_1" name="radioButtonARIA" value="1" role="radio" aria-checked="false" tabindex="0"
+				aria-labelledby="ariaRadio1" data-value="True">
+				<label for="ARIA_Radio_1">ARIA Radio 1</label>
+				<input type="radio" id="ARIA_Radio_2" name="radioButtonARIA" value="2" role="radio" aria-checked="false" tabindex="0"
+				aria-labelledby="ariaRadio2" data-value="True">
+				<label for="ARIA_Radio_3">ARIA Radio 2</label>
+				<input type="radio" id="ARIA_Radio_3" name="radioButtonARIA" value="3" role="radio" aria-checked="false" tabindex="0"
+				aria-labelledby="ariaRadio3" data-value="True">
+				<label for="ARIA_Radio_3">ARIA Radio 3</label>
 			</div>
-		</section>
+		</div>
+
+		<div class="grid-div col3">
+			<h3>Keyboard interaction</h3>
+			<p>Para ir al siguiente elemento usar → o ↓, para ir a un elemento anterior ← o ↑</p>
+			<p>Si no hay ningún elemento seleccionado usar el space para marcarlo</p>
+		</div>
+
+		<div class="grid-div col3">
+			<h3>ARIA atributes</h3>
+			<ul>
+				<li>ROLE - Para todo el conjunto se crea un elemento con el rol de 'radiogroup', para cada boton se usa el rol 'radio'</li>
+				<li>ARIA-CHECKED - Funciona para decir si el botón está check desde su inicio (se puede usar JS para modificar el valor)</li>
+				<li>ARIA-LABELLEDBY | ARIA-LABEL - Dice el valor (texto del botón) que tiene el elemento</li>
+			</ul>
+			<ul>
+				<li>ARIA-DESCRIBEDBY - Descripción del radiogroup</li>
+				<li>ARIA-REQUIRED - Menciona si es obligatorio seleccionar uno de los elementos</li>
+			</ul>
+		</div>
+		
 	</main>
 
 	<footer role="contentinfo">
