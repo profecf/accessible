@@ -1,23 +1,35 @@
-html, body {
+/*Configuracións generals*/
+html,
+body,
+header,
+main {
     margin: 0 auto;
+    width: 90%;
+}
+
+html,
+body {
     width: 100%;
     text-align: justify;
 }
 
-header, main {
-    margin: 0 auto;
-    width: 90%;
-} 
-
-/*Separar per columnes amb grid*/
+/*Configuració per al header*/
 header {
     display: grid;
     grid-template-columns: 70% 30%;
     background-color: darkblue;
 }
 
-button, svg {
+/*Amaguem botons i SVGs per defecte*/
+button,
+svg,
+.desplegable {
     display: none;
+}
+
+/*Configuració per als enllaços de la navegació*/
+nav ul {
+    list-style: none;
 }
 
 nav ul a {
@@ -26,18 +38,14 @@ nav ul a {
     margin: 20px;
 }
 
-nav ul li {
-    list-style: none;
-}
-
-nav ul a:hover {
+nav ul a:hover,
+.desplegable:hover {
     color: #fff;
     text-decoration: underline;
 }
 
-/*Desplegable amagat amb els seus estils*/
+/*Configuració per al menú desplegable*/
 .desplegable {
-    display: none;
     list-style: none;
     border: 1px solid #fff;
     position: absolute;
@@ -46,7 +54,6 @@ nav ul a:hover {
     background-color: darkblue;
     padding: 0;
     margin: 0;
-    
 }
 
 .desplegable li {
@@ -54,24 +61,23 @@ nav ul a:hover {
     margin: 2.5px;
 }
 
-.desplegable:hover {
+/*Mostrem el menú desplegable al passar el ratolí per sobre*/
+nav ul a:nth-child(3):hover+.desplegable {
     display: block;
 }
 
-/*Mostrar desplegable al pasar el ratoli per widgets*/
-nav ul a:nth-child(3):hover + .desplegable {
-    display: block;
-}
-
+/*Configuració per al formulari*/
 form {
     margin: 10px 0 0 15px;
 }
 
-label {
+label,
+footer {
     color: #fff;
 }
 
-.text, .button {
+.text,
+.button {
     padding: 5px;
 }
 
@@ -80,6 +86,7 @@ label {
     color: navy;
 }
 
+/*Configuració per als títols*/
 h1 {
     font-size: 4em;
     text-align: center;
@@ -90,16 +97,20 @@ h2 {
     transform: translateY(-90%);
 }
 
-h1, h2 {
+h1,
+h2 {
     color: midnightblue;
 }
 
+/*Configuració per als paràgrafs*/
 p {
     margin-top: -15px;
     font-size: 20px;
 }
 
-.article1, .article2 {
+/*Configuració per als articles*/
+.article1,
+.article2 {
     display: grid;
     grid-template-columns: auto auto;
     margin-top: 50px;
@@ -113,13 +124,14 @@ p {
     margin-left: 16px;
 }
 
+/*Configuració per a les imatges*/
 img {
     width: 100%;
 }
 
+/*Disseny del footer*/
 footer {
     background-color: #222;
-    color: #fff;
     margin-top: 40px;
     padding: 20px;
     text-align: center;
