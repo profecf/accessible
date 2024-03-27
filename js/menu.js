@@ -54,16 +54,16 @@ window.onload = function () {
 
   // Evento click
   botonOnclick.addEventListener("click", function () {
-    alert("Sale cuando haces click!");
+    alert("Sale cuando haces click!\n\nPresione Enter para cerrar este mensaje");
   });
 
   // Evento dblclick
   botonDobleclick.addEventListener("dblclick", function () {
-    alert("Sale cuando haces doble click!");
+    alert("Sale cuando haces doble click!\n\nPresione Enter para cerrar este mensaje");
   });
 
   // Evento mouseenter
   botonMouseenter.addEventListener("mouseenter", function () {
-    alert("Sale cuando el ratón pasa  sobre el botón!");
+    alert("Sale cuando el ratón pasa  sobre el botón!\n\nPresione Enter para cerrar este mensaje");
   });
 };
