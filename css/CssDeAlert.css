@@ -13,6 +13,13 @@ h2 {
     font-size: 2em;
     margin-top: 0px;
 }
+h3{
+    font-size: small;
+    text-align: center;
+    color: black;
+    padding: 0px;
+    margin: 0;
+}
 
 h1, h2 {
     color: midnightblue;
@@ -37,7 +44,11 @@ section {
 }
 
 section img {
-    width: 100%;
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 5px;
 }
 
 div.half-width {
@@ -75,25 +86,25 @@ div.full-width {
 
 /************************ Etilos Alert */
 #contenAlerts{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
 
 }
 .conten_alert{
-    width: 150px;
-    height: 150px;
-    padding: 20px;
+  width: 200px; 
+  height: 200px;
+  padding: 20px;
+  margin: 10px; 
   }
-h3{
-    font-size: small;
-    text-align: center;
-    color: black;
-    padding: 0px;
-    margin: 0;
-}
+  /* ************ RESPONSABILIDAD  ALERT, pasa a columna en patellas pequeñas*/
+@media (max-width: 768px) {
+    #contenAlerts{
+      flex-direction: column;
+    }
+  }
+
 #botonIcono1, #botonIcono2, #botonIcono3{
     width: 60px;
     height: 60px;
@@ -132,19 +143,6 @@ h3{
     color: rgb(21, 242, 21);
 }
 
-/* Estilo de las imagenes*/
-#img1{
-    width: 300px;
-    height: 300px;
-    /* padding-top: 50px; */
-    padding-bottom: 5px;
-}
-
-#img2{
-    width: 300px;
-    height: 300px;
-    padding-top: 35px;
-}
 /* Estilo icono link */
 figcaption i{
     color: black;
@@ -156,3 +154,7 @@ strong a{
 ul {
     list-style-type: none; 
   }
+
+
+
+
