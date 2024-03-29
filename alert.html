@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ca-es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Libreria de iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <title>Accessibilitat de dalt a baix</title>
+    <!-- CssDeAlert.css es el CSS exclusivo de para esta vista -->
+    <link rel="stylesheet" href="css/CssDeAlert.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <script src="js/menu.js"></script>
+  </head>
+
+  <body>
+    <nav role="navigation" aria-label="Principal">
+      <ul role="menu">
+        <li role="menuitem"><a href="#" aria-current="page">Principal</a></li>
+        <li role="menuitem">
+          <a href="caracteristiques.html">Característiques</a>
+        </li>
+        <li role="menuitem" class="has-submenu">
+          <a href="widgets.html" aria-expanded="false"> Widgets </a>
+          <ul>
+            <li><a href="acordio.html">Acordió</a></li>
+            <li><a href="index.html">Indice</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form name="cerca" role="search">
+        <label for="cerca">Cerqueu:</label>
+        <input id="cerca" type="text" placeholder="Introduïu el text" />
+        <button type="submit">Cercar</button>
+      </form>
+    </nav>
+
+    <main role="main">
+      <!-- Titulo principal y encabezado -->
+      <header id="tituloPrincipal" role="banner">
+        <h1>¿Qué es un alert en HTML?</h1>
+      </header>
+      <!-- texto encabezado -->
+      <article id="articuloPrincipal" role="article">
+        <p>
+          Un alert en HTML es una ventana emergente que se utiliza para mostrar
+          información al usuario de forma modal, es decir, el usuario no puede
+          interactuar con el resto de la página hasta que haya cerrado la
+          ventana emergente.
+        </p>
+      </article>
+      <!-- contenido principal -->
+
+      <!-- sección 1 -->
+      <section id="seccion1" role="region">
+        <div id="divSeccion1">
+          <!-- titulo arriba en la izquierda -->
+          <header id="titulosecion1">
+            <h2>¿Para qué sirve un alert?</h2>
+          </header>
+
+          <article id="articulo1" role="article">
+            <!-- texto de abajo del titulo a la izquierda -->
+            <p>
+              Los alerts se utilizan para:
+              <br /><br />
+              &middot; Mostrar mensajes de error: Se pueden usar para informar
+              al usuario de que ha habido un error al realizar una acción.
+              <br /><br />
+              &middot; Mostrar mensajes de confirmación: Se pueden usar para
+              confirmar que el usuario desea realizar una acción que podría
+              tener consecuencias importantes.<br /><br />
+              &middot;Mostrar información importante: Se pueden usar para
+              mostrar información importante al usuario, como un anuncio o una
+              noticia.
+            </p>
+          </article>
+        </div>
+
+
+        <!-- esta parte a la derecha del texto -->
+        <figure id="img1">
+          <img
+            src="img/megaphone-297467_640.png"
+            alt="Foto de un hombre utilizando un megáfono."
+          />
+          <figcaption>
+            <ul>
+              <li>
+                <i
+                  aria-label="icono de enlace"
+                  class="fa-solid fa-link"
+                 
+                ></i>
+                <strong>
+                  <a href="https://pixabay.com/es/vectors/meg%C3%A1fono-altavoz-hombre-sonido-297467/"
+                    >Enlace de la imagen</a
+                  >
+                </strong>
+              </li>
+              <li>
+                <i
+                  aria-label="icono de enlace"
+                  class="fa-solid fa-link"
+                 
+                ></i>
+                <strong>
+                  <a href="https://pixabay.com/es/service/license-summary/"
+                    >Enlace licencia imagen</a
+                  >
+                </strong>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+        
+      </section>
+      <section id="seccion2" role="region">
+        <!-- articulo 2 -->
+        <div id="divSeccion2">
+          <header id="titulosecion2">
+            <h2>¿Cómo se crea un alert en HTML?</h2>
+          </header>
+          <article id="articulo2" role="article">
+            <p>
+              Un alert se crea usando la función window.alert(). Esta función
+              toma un único argumento, que es el mensaje que se desea mostrar al
+              usuario.
+            </p>
+            <p>Ejemplo de código.</p>
+            <pre>
+            <strong>
+           &lt;script&gt;
+           window.alert("¡Hola mundo!");
+           &lt;/script&gt;
+            </strong>
+          </pre>
+            <div id="contenAlerts">
+              <!-- Alert 1 -->
+              <div class="conten_alert">
+                <!-- Titulo alert 1 -->
+                <h3>
+                  Clic aquí para ver un ejemplo de alert con función click.
+                </h3>
+                <!-- Boton e icono de alert -->
+                <button id="botonIcono1" aria-label="boton para ver el primer alert dándole click">
+                  <i id="iconoAlert2"class="fa-solid fa-triangle-exclamation fa-beat"></i>
+                </button>
+              </div>
+              <!-- Final contenedor alert1 -->
+              <!-- Alert 2 -->
+              <div  class="conten_alert">
+                <h3>
+                  Clic aquí para ver un ejemplo de alert con función doble click.
+                </h3>
+                <!-- Boton e icono de alert -->
+                <button id="botonIcono2" aria-label="boton para ver el primer alert dándole doble click">
+                  <i
+                    id="iconoAlert3"
+                    class="fa-solid fa-triangle-exclamation fa-shake"></i>
+                </button>
+              </div>
+              <!-- Final contenedor alert3 -->
+               <!-- Alert 2 -->
+               <div   class="conten_alert">
+                <h3>
+                  Pasa el ratón por encima del icono para ver ejemplo de alert con función mouseenter.
+                </h3>
+                <!-- Boton e icono de alert -->
+                <button id="botonIcono3"aria-label="boton para ver el primer alert pasando el ratón por encima">
+                  <i 
+                    id="iconoAlert"
+                    class="fa-solid fa-triangle-exclamation fa-flip"
+                  ></i>
+                </button>
+              </div>
+              <!-- Final contenedor alert3 -->
+            </div> <!-- Final contenedor de los iconos generales -->
+          </article>
+        </div>
+
+        <!-- a la derecha -->
+        <figure id="img2">
+          <img src="img/traffic-sign-38589_640.png" alt="Imagen de una señal de tráfico que advierte de peligro." />
+          <figcaption>
+            <ul>
+              <li>
+                <i
+                  aria-label="icono de enlace"
+                  class="fa-solid fa-link"
+                ></i>
+                <strong>
+                  <a href="https://pixabay.com/es/vectors/se%C3%B1al-de-advertencia-30915/"
+                    >Enlace de la imagen</a
+                  >
+                </strong>
+              </li>
+              <li>
+                <i
+                  aria-label="icono de enlace"
+                  class="fa-solid fa-link"
+                ></i>
+                <strong>
+                  <a href="https://pixabay.com/es/service/license-summary/"
+                    >Enlace licencia imagen</a
+                  >
+                </strong>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <aside role="complementary">Contenido no relacionado</aside>
+    <footer role="contentinfo">Pie de pagina</footer>
+  </body>
+</html>
