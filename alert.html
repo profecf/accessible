@@ -18,20 +18,24 @@
   </head>
 
   <body>
-    <nav role="navigation" aria-label="Principal">
+    <!-- Añado el area label a la vista donde estamos ahora -->
+    <nav role="navigation" aria-label="Alert">
       <ul role="menu">
-        <li role="menuitem"><a href="#" aria-current="page">Principal</a></li>
+        <li><a href="index.html">Principal</a></li>
         <li role="menuitem">
           <a href="caracteristiques.html">Característiques</a>
         </li>
         <li role="menuitem" class="has-submenu">
-          <a href="widgets.html" aria-expanded="false"> Widgets </a>
+          <a href="widgets.html" aria-expanded="false">Widgets</a>
           <ul>
             <li><a href="acordio.html">Acordió</a></li>
-            <li><a href="index.html">Indice</a></li>
+            <li><a href="widgets.html">Alerta</a></li>
+            <!-- Le atizo  aria-current="page">Alert y role para indicar que estamos en esta vista-->
+            <li role="menuitem"><a href="#" aria-current="page">Alert</a></li>
           </ul>
         </li>
       </ul>
+
       <form name="cerca" role="search">
         <label for="cerca">Cerqueu:</label>
         <input id="cerca" type="text" placeholder="Introduïu el text" />
@@ -81,7 +85,6 @@
           </article>
         </div>
 
-
         <!-- esta parte a la derecha del texto -->
         <figure id="img1">
           <img
@@ -91,23 +94,16 @@
           <figcaption>
             <ul>
               <li>
-                <i
-                  aria-label="icono de enlace"
-                  class="fa-solid fa-link"
-                 
-                ></i>
+                <i aria-label="icono de enlace" class="fa-solid fa-link"></i>
                 <strong>
-                  <a href="https://pixabay.com/es/vectors/meg%C3%A1fono-altavoz-hombre-sonido-297467/"
+                  <a
+                    href="https://pixabay.com/es/vectors/meg%C3%A1fono-altavoz-hombre-sonido-297467/"
                     >Enlace de la imagen</a
                   >
                 </strong>
               </li>
               <li>
-                <i
-                  aria-label="icono de enlace"
-                  class="fa-solid fa-link"
-                 
-                ></i>
+                <i aria-label="icono de enlace" class="fa-solid fa-link"></i>
                 <strong>
                   <a href="https://pixabay.com/es/service/license-summary/"
                     >Enlace licencia imagen</a
@@ -117,7 +113,6 @@
             </ul>
           </figcaption>
         </figure>
-        
       </section>
       <section id="seccion2" role="region">
         <!-- articulo 2 -->
@@ -147,63 +142,77 @@
                   Clic aquí para ver un ejemplo de alert con función click.
                 </h3>
                 <!-- Boton e icono de alert -->
-                <button id="botonIcono1" aria-label="boton para ver el primer alert dándole click">
-                  <i id="iconoAlert2"class="fa-solid fa-triangle-exclamation fa-beat"></i>
+                <button
+                  id="botonIcono1"
+                  aria-label="boton para ver el primer alert dándole click"
+                >
+                  <i
+                    id="iconoAlert2"
+                    class="fa-solid fa-triangle-exclamation fa-beat"
+                  ></i>
                 </button>
               </div>
               <!-- Final contenedor alert1 -->
               <!-- Alert 2 -->
-              <div  class="conten_alert">
+              <div class="conten_alert">
                 <h3>
-                  Clic aquí para ver un ejemplo de alert con función doble click.
+                  Clic aquí para ver un ejemplo de alert con función doble
+                  click.
                 </h3>
                 <!-- Boton e icono de alert -->
-                <button id="botonIcono2" aria-label="boton para ver el primer alert dándole doble click">
+                <button
+                  id="botonIcono2"
+                  aria-label="boton para ver el primer alert dándole doble click"
+                >
                   <i
                     id="iconoAlert3"
-                    class="fa-solid fa-triangle-exclamation fa-shake"></i>
+                    class="fa-solid fa-triangle-exclamation fa-shake"
+                  ></i>
                 </button>
               </div>
               <!-- Final contenedor alert3 -->
-               <!-- Alert 2 -->
-               <div   class="conten_alert">
+              <!-- Alert 2 -->
+              <div class="conten_alert">
                 <h3>
-                  Pasa el ratón por encima del icono para ver ejemplo de alert con función mouseenter.
+                  Pasa el ratón por encima del icono para ver ejemplo de alert
+                  con función mouseenter.
                 </h3>
                 <!-- Boton e icono de alert -->
-                <button id="botonIcono3"aria-label="boton para ver el primer alert pasando el ratón por encima">
-                  <i 
+                <button
+                  id="botonIcono3"
+                  aria-label="boton para ver el primer alert pasando el ratón por encima"
+                >
+                  <i
                     id="iconoAlert"
                     class="fa-solid fa-triangle-exclamation fa-flip"
                   ></i>
                 </button>
               </div>
               <!-- Final contenedor alert3 -->
-            </div> <!-- Final contenedor de los iconos generales -->
+            </div>
+            <!-- Final contenedor de los iconos generales -->
           </article>
         </div>
 
         <!-- a la derecha -->
         <figure id="img2">
-          <img src="img/traffic-sign-38589_640.png" alt="Imagen de una señal de tráfico que advierte de peligro." />
+          <img
+            src="img/traffic-sign-38589_640.png"
+            alt="Imagen de una señal de tráfico que advierte de peligro."
+          />
           <figcaption>
             <ul>
               <li>
-                <i
-                  aria-label="icono de enlace"
-                  class="fa-solid fa-link"
-                ></i>
+                <i aria-label="icono de enlace" class="fa-solid fa-link"></i>
                 <strong>
-                  <a href="https://pixabay.com/es/vectors/se%C3%B1al-de-advertencia-30915/"
+                  <a
+                    href="https://pixabay.com/es/vectors/se%C3%B1al-de-advertencia-30915/"
                     >Enlace de la imagen</a
                   >
                 </strong>
               </li>
               <li>
-                <i
-                  aria-label="icono de enlace"
-                  class="fa-solid fa-link"
-                ></i>
+                <i aria-label="icono de enlace" class="fa-solid fa-link"></i>
                 <strong>
                   <a href="https://pixabay.com/es/service/license-summary/"
                     >Enlace licencia imagen</a
