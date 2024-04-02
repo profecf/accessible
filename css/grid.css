@@ -35,6 +35,16 @@ nav ul a:hover {
     text-decoration: underline;
 }
 
+#contingut-nav {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: left;
+}
+
+#contingut-nav li {
+    text-align: center;
+}
+
 /*Desplegable amagat amb els seus estils*/
 .desplegable {
     display: none;
