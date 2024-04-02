@@ -1,77 +1,80 @@
 <!DOCTYPE html>
 <html lang="ca-es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accessibilitat de dalt a baix</title>
-    <link rel="stylesheet" href="css/estils.css" />
-    <link rel="stylesheet" href="css/nav.css" />
-    <script src="js/menu.js"></script>
-  </head>
 
-  <body>
-    <nav role="navigation" aria-label="Principal">
-      <ul role="menu">
-        <li role="menuitem">
-          <a href="index.html" aria-current="page">Principal</a>
-        </li>
-        <li role="menuitem">
-          <a href="caracteristiques.html">Característiques</a>
-        </li>
-        <li role="menuitem" class="has-submenu">
-          <a href="widgets.html" aria-expanded="false"> Widgets </a>
-          <ul>
-            <li role="menuitem"><a href="acordio.html">Acordió</a></li>
-            <li role="menuitem"><a href="alerta.html">Alerta</a></li>
-            <li role="menuitem"><a href="spinButton.html">Spin Button</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form name="cerca" role="search">
-        <label for="cerca">Cerqueu:</label>
-        <input id="cerca" type="text" placeholder="Introduïu el text" />
-        <button type="submit">Cercar</button>
-      </form>
-    </nav>
-    <header role="banner">
-      <h1>Spin Button</h1>
-    </header>
-    <main role="main">
-      <p>
-        Un "spin button" és un element d'interfície gràfica d'usuari que
-        s'utilitza comúment en aplicacions informàtiques per permetre als
-        usuaris seleccionar un valor numèric dins d'un rang específic.
-        Consisteix típicament en una caixa de text juntament amb botons de
-        fletxa cap amunt i cap avall, que permeten augmentar o disminuir el
-        valor mostrat a la caixa de text de manera incremental. Els usuaris
-        poden fer clic a les fletxes o utilitzar el teclat per modificar el
-        valor, la qual cosa resulta útil per seleccionar opcions numèriques de
-        manera ràpida i precisa. Els "spin buttons" són comuns en interfícies de
-        programari per configurar ajustos com l'hora, la data, la mida de la
-        font, entre altres.
-      </p>
-      <section aria-labelledby="capMenu">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessibilitat de dalt a baix</title>
+  <link rel="stylesheet" href="css/estils.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <script src="js/menu.js"></script>
+</head>
+
+<body>
+  <nav role="navigation" aria-label="Principal">
+    <ul role="menu">
+      <li role="menuitem">
+        <a href="index.html" aria-current="page">Spin Button</a>
+      </li>
+      <li role="menuitem">
+        <a href="caracteristiques.html">Característiques</a>
+      </li>
+      <li role="menuitem" class="has-submenu">
+        <a href="widgets.html" aria-expanded="false"> Widgets </a>
+        <ul>
+          <li role="menuitem"><a href="acordio.html">Acordió</a></li>
+          <li role="menuitem"><a href="alerta.html">Alerta</a></li>
+          <li role="menuitem"><a href="disclosure.html">Disclosure</a></li>
+          <li role="menuitem"><a href="tree-view.html">Vista d'arbre</a></li>
+          <li role="menuitem"><a href="radio.html">Radio</a></li>
+          <li role="menuitem"><a href="spinButton.html">Spin Button</a></li>
+        </ul>
+      </li>
+    </ul>
+    <form name="cerca" role="search">
+      <label for="cerca">Cerqueu:</label>
+      <input id="cerca" type="text" placeholder="Introduïu el text" />
+      <button type="submit">Cercar</button>
+    </form>
+  </nav>
+  <header role="banner">
+    <h1>Spin Button</h1>
+  </header>
+  <main role="main">
+    <p>
+      Un "spin button" és un element d'interfície gràfica d'usuari que
+      s'utilitza comúment en aplicacions informàtiques per permetre als
+      usuaris seleccionar un valor numèric dins d'un rang específic.
+      Consisteix típicament en una caixa de text juntament amb botons de
+      fletxa cap amunt i cap avall, que permeten augmentar o disminuir el
+      valor mostrat a la caixa de text de manera incremental. Els usuaris
+      poden fer clic a les fletxes o utilitzar el teclat per modificar el
+      valor, la qual cosa resulta útil per seleccionar opcions numèriques de
+      manera ràpida i precisa. Els "spin buttons" són comuns en interfícies de
+      programari per configurar ajustos com l'hora, la data, la mida de la
+      font, entre altres.
+    </p>
+    <section aria-labelledby="capMenu">
+      <div>
+        <h2 id="capMenu">Com fer un Spin Button?</h2>
+        <p>A continuació presentem com fer diferents de spin buttons</p>
+        <p>
+          Originalment es fa amb un input type number, pero es podria utilitza
+          també un un select
+        </p>
         <div>
-          <h2 id="capMenu">Com fer un Spin Button?</h2>
-          <p>A continuació presentem com fer diferents de spin buttons</p>
-          <p>
-            Originalment es fa amb un input type number, pero es podria utilitza
-            també un un select
-          </p>
-          <div>
-            <h3>Input type number:</h3>
-            <p><b>input type="number"</b></p>
-            <pre>
+          <h3>Input type number:</h3>
+          <p><b>input type="number"</b></p>
+          <pre>
                         &lt;label for="hores"&gt;Hores →&lt;/label&gt;
                         &lt;input type="number" id="hores" name="hores" value="1" min="0" max="23"&gt;
-                    </pre
-            >
-          </div>
-          <div>
-            <h3>Select:</h3>
-            <p><b>select</b></p>
-            <pre>
+                    </pre>
+        </div>
+        <div>
+          <h3>Select:</h3>
+          <p><b>select</b></p>
+          <pre>
                         &lt;label for="diesSetmana"&gt;Dies de la setmana →&lt;/label&gt;
                         &lt;select id="diesSetmana" name="diesSetmana"&gt;
                             &lt;option value="dilluns"&gt;Dilluns&lt;/option&gt;
@@ -82,95 +85,87 @@
                             &lt;option value="dissabte"&gt;Dissabte&lt;/option&gt;
                             &lt;option value="diumenge"&gt;Diumenge&lt;/option&gt;
                         &lt;/select&gt;
-                    </pre
-            >
-          </div>
+                    </pre>
         </div>
-      </section>
-      <section aria-labelledby="capRatoli">
-        <div class="full-width">
-          <h2 id="capRatoli">Exemple</h2>
-          <h4>Input type number:</h4>
-          <div>
-            Escriu o escull un número:
-            <input
-              type="number"
-              id="hores"
-              name="hores"
-              value="1"
-              min="0"
-              max="23"
-            />
-          </div>
-          <br />
-          <table
-            style="
+      </div>
+    </section>
+    <section aria-labelledby="capRatoli">
+      <div class="full-width">
+        <h2 id="capRatoli">Exemple</h2>
+        <h4>Input type number:</h4>
+        <div>
+          Escriu o escull un número:
+          <input type="number" id="hores" name="hores" value="1" min="0" max="23" />
+        </div>
+        <br />
+        <table style="
               border: 1px solid black;
               border-collapse: collapse;
               text-align: center;
-            "
-          >
-            <tr>
-              <th style="border: 1px solid black">Valor Mínim</th>
-              <th style="border: 1px solid black">Valor Màxim</th>
-              <th style="border: 1px solid black">Valor per defecte</th>
-            </tr>
-            <tr>
-              <td style="border: 1px solid black">0</td>
-              <td style="border: 1px solid black">23</td>
-              <td style="border: 1px solid black">1</td>
-            </tr>
-          </table>
+            ">
+          <tr>
+            <th style="border: 1px solid black">Valor Mínim</th>
+            <th style="border: 1px solid black">Valor Màxim</th>
+            <th style="border: 1px solid black">Valor per defecte</th>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black">0</td>
+            <td style="border: 1px solid black">23</td>
+            <td style="border: 1px solid black">1</td>
+          </tr>
+        </table>
 
-          <h4>Select:</h4>
-            Escull un dia de la setmana:
-            <select id="diesSetmana" name="diesSetmana">
-              <option value="dilluns">Dilluns</option>
-              <option value="dimarts">Dimarts</option>
-              <option value="dimecres">Dimecres</option>
-              <option value="dijous">Dijous</option>
-              <option value="divendres">Divendres</option>
-              <option value="dissabte">Dissabte</option>
-              <option value="diumenge">Diumenge</option>
-            </select>
+        <h4>Select:</h4>
+        Escull un dia de la setmana:
+        <select id="diesSetmana" name="diesSetmana">
+          <option value="dilluns">Dilluns</option>
+          <option value="dimarts">Dimarts</option>
+          <option value="dimecres">Dimecres</option>
+          <option value="dijous">Dijous</option>
+          <option value="divendres">Divendres</option>
+          <option value="dissabte">Dissabte</option>
+          <option value="diumenge">Diumenge</option>
+        </select>
 
-          <table
-            style="
+        <table style="
               border: 1px solid black;
               border-collapse: collapse;
               text-align: center;
-            "
-          >
-            <tr>
-              <th style="border: 1px solid black">Valor per defecte</th>
-            </tr>
-            <tr>
-              <td style="border: 1px solid black">Dilluns</td>
-            </tr>
-          </table>
-        </div>
-      </section>
-      <section aria-labelledby="capRatoli">
-        <div class="full-width">
-          <h2 id="capRatoli">Accessibilitat amb el ratolí</h2>
-          <p>
-            Els usuaris que interactuen amb el ratolí han de ser capaços de fer clic als botons d'increment i decrement de l'Spin Button de forma fàcil i precisa.
-          </p>
-        </div>
-      </section>
-      <section aria-labelledby="capTeclat">
-        <div class="full-width">
-          <h2 id="capTeclat">Accessibilitat amb el teclat</h2>
-          <p>
-            
-Els usuaris que interactuen amb el teclat han de ser capaços de navegar fàcilment fins als botons d'increment i decrement del "Spin Button" utilitzant la tecla de tabulació (Tab) i la tecla de retrocés (Shift + Tab) per moure's cap endavant i cap enrere , respectivament, a través dels elements enfocables de la pàgina.
-          </p>
-        </div>
-      </section>
-    </main>
-    <footer role="contentinfo">
-      <hr />
-      &copy; Copyright 2024 | Eric Salado Zafra i Borja Montseny Peris
-    </footer>
-  </body>
+            ">
+          <tr>
+            <th style="border: 1px solid black">Valor per defecte</th>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black">Dilluns</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section aria-labelledby="capRatoli">
+      <div class="full-width">
+        <h2 id="capRatoli">Accessibilitat amb el ratolí</h2>
+        <p>
+          Els usuaris que interactuen amb el ratolí han de ser capaços de fer clic als botons d'increment i decrement de
+          l'Spin Button de forma fàcil i precisa.
+        </p>
+      </div>
+    </section>
+    <section aria-labelledby="capTeclat">
+      <div class="full-width">
+        <h2 id="capTeclat">Accessibilitat amb el teclat</h2>
+        <p>
+
+          Els usuaris que interactuen amb el teclat han de ser capaços de navegar fàcilment fins als botons d'increment
+          i decrement del "Spin Button" utilitzant la tecla de tabulació (Tab) i la tecla de retrocés (Shift + Tab) per
+          moure's cap endavant i cap enrere , respectivament, a través dels elements enfocables de la pàgina.
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer role="contentinfo">
+    <hr />
+    &copy; Copyright 2024 | Eric Salado Zafra i Borja Montseny Peris
+  </footer>
+</body>
+
 </html>
