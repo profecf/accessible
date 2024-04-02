@@ -1,18 +1,5 @@
-html, body {
-    max-width: 1200px;
-    margin: 0% auto;
-    padding: 0;
-}
 
-h1 {
-    font-size: 4em;
-    text-align: center;
-}
 
-h2 {
-    font-size: 2em;
-    margin-top: 0px;
-}
 h3{
     font-size: small;
     text-align: center;
@@ -21,27 +8,6 @@ h3{
     margin: 0;
 }
 
-h1, h2 {
-    color: midnightblue;
-}
-
-a {
-    color: darkslateblue;
-}
-
-footer {
-    margin-bottom: 1.5em;
-}
-
-/***********************/
-/**     Sections      **/
-/***********************/
-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 1em;
-}
 
 section img {
     width: 300px;
@@ -51,38 +17,6 @@ section img {
     padding-bottom: 5px;
 }
 
-div.half-width {
-    width: 48%;
-}
-
-div.full-width {
-    width: 100%;
-}
-
-/****************************/
-/**     Classes comunes     **/
-/****************************/
-.peu-foto {
-    margin-top: 0.1em;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    -webkit-clip-path: inset(50%);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap;
-}
-
-div.full-width {
-    width: 100%;
-}
 
 /************************ Etilos Alert */
 #contenAlerts{
