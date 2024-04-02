@@ -8,6 +8,7 @@
 	<title>Accessibilitat de dalt a baix</title>
 	<link rel="stylesheet" href="css/estils.css">
 	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/carusell.css">
     <script src="js/menu.js"></script>
 </head>
 
@@ -104,6 +105,52 @@
 		</section>
 	</main>
 
+
+	
+<div id="carousel-container">
+	<div id="carousel">
+  
+	  <img src="img/reus.jpg" alt="Reus">
+	  
+	  <img src="img/Ch.jpg" alt="Ch">
+	  
+	  <img src="img/La.jpg" alt="La">
+	  
+	  <img src="img/Ny.jpg" alt="Ny">
+	  
+	</div>
+  
+	
+	<div id="nav-buttons">
+	  <button onclick="anteriorImage()">&#60;</button>
+	  <button onclick="seguentImage()">></button>
+	</div>
+  </div>
+  
+  <script>
+	const carousel = document.getElementById('carousel');
+	const images = document.querySelectorAll('#carousel img');
+	let imatgeActual = 0;
+  
+	function mostrarImage(index) {
+	  const transformValue = -index * 100 + '%';
+	  carousel.style.transform = 'translateX(' + transformValue + ')';
+	}
+  
+	function seguentImage() {
+	  imatgeActual = (imatgeActual + 1) % images.length;
+	  mostrarImage(imatgeActual);
+	}
+  
+	function anteriorImage() { 
+	  imatgeActual = (imatgeActual - 1 + images.length) % images.length;
+	  mostrarImage(imatgeActual);
+	}
+  
+	setInterval(seguentImage, 3000);  // Cambiar de imatge cada 3 seg 
+  </script>
+
+	
 	<footer role="contentinfo">
 		<hr>
 		&copy; Copyright 2024
