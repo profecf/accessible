@@ -1,25 +1,22 @@
-html,
-body {
+html, body {
     margin: 0 auto;
     width: 100%;
     text-align: justify;
 }
 
-header,
-main {
+header, main {
     margin: 0 auto;
     width: 90%;
-}
+} 
 
+/*Separar per columnes amb grid*/
 header {
     display: grid;
     grid-template-columns: 70% 30%;
     background-color: darkblue;
 }
 
-/* Ocultem els elements button y svg */
-button,
-svg {
+button, svg {
     display: none;
 }
 
@@ -38,6 +35,7 @@ nav ul a:hover {
     text-decoration: underline;
 }
 
+/*Desplegable amagat amb els seus estils*/
 .desplegable {
     display: none;
     list-style: none;
@@ -48,6 +46,7 @@ nav ul a:hover {
     background-color: darkblue;
     padding: 0;
     margin: 0;
+    
 }
 
 .desplegable li {
@@ -55,17 +54,6 @@ nav ul a:hover {
     margin: 2.5px;
 }
 
-/* Mostrem el menú desplegable al passar el ratolí por damunt */
-.desplegable:hover {
-    display: block;
-}
-
-/* Mostrem el menú desplegable al passar el ratolí per el tercer enllaç dins del nav */
-nav ul a:nth-child(3):hover+.desplegable {
-    display: block;
-}
-
-/* Configurem el margen del formulari */
 form {
     margin: 10px 0 0 15px;
 }
@@ -74,8 +62,7 @@ label {
     color: #fff;
 }
 
-.text,
-.button {
+.text, .button {
     padding: 5px;
 }
 
@@ -94,8 +81,7 @@ h2 {
     transform: translateY(-90%);
 }
 
-h1,
-h2 {
+h1, h2 {
     color: midnightblue;
 }
 
@@ -104,28 +90,24 @@ p {
     font-size: 20px;
 }
 
-.article1,
-.article2 {
+.article1, .article2 {
     display: grid;
     grid-template-columns: auto auto;
     margin-top: 50px;
 }
 
-/* Configurem el espai entre les imatges i el text*/
 .contingut-article1 {
-    margin-right: 18px;
+    margin-right: 16px;
 }
 
 .contingut-article2 {
-    margin-left: 18px;
+    margin-left: 16px;
 }
 
-/* Establece la anchura de las imágenes */
 img {
     width: 100%;
 }
 
-/* Configurem el footer */
 footer {
     background-color: #222;
     color: #fff;
@@ -135,7 +117,7 @@ footer {
 }
 
 footer h3 {
-    font-size: 20px;
+    font-size: 1em;
 }
 
 footer p {
