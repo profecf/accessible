@@ -8,30 +8,33 @@
     <title>Implementació del Feed</title>
     <link rel="stylesheet" href="css/feed.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/estils.css">
     <script src="js/menu.js"></script>
 </head>
 
 <body>
-    <nav role="navigation" aria-label="Menú principal">
-        <ul>
-            <li><a href="#" aria-current="page">Principal</a></li>
-            <li><a href="caracteristiques.html">Característiques</a></li>
-            <li>
-                <a href="widgets.html" aria-expanded="false" aria-haspopup="true">Widgets</a>
-                <ul aria-label="Submenú">
-                    <li><a href="acordio.html">Acordió</a></li>
-                    <li><a href="alerta.html">Alerta</a></li>
-                    <li><a href="feed.html">Feed</a></li>
+	<nav role="navigation" aria-label="Principal">
+		<ul role="menu">
+			<li role="menuitem"><a href="#" aria-current="page" >Principal</a></li>
+			<li role="menuitem"><a href="caracteristiques.html">Característiques</a></li>
+			<li role="menuitem" class="has-submenu">
+                <a href="widgets.html" aria-expanded="false">
+                    Widgets
+                </a>
+                <ul>
+                    <li role="menuitem"><a href="acordio.html">Acordió</a></li>
+                    <li role="menuitem"><a href="alerta.html">Alerta</a></li>
+                    <li role="menuitem"><a href="feed.html">Feed</a></li>
                 </ul>
             </li>
-        </ul>
-        <form role="search">
-            <label for="cerca">Cerqueu:</label>
-            <input id="cerca" type="text" placeholder="Introduïu el text" aria-label="Cerca">
-            <button type="submit">Cercar</button>
-        </form>
-    </nav>
-
+		</ul>
+		<form name="cerca" role="search">
+			<label for="cerca">Cerqueu:</label>
+			<input id="cerca" type="text" placeholder="Introduïu el text">
+			<button type="submit">Cercar</button>
+		</form>
+	</nav>
+    
     <main id="main" role="main">
         <article>
             <h1>Com millora el feed l'accessibilitat i la interacció</h1>
@@ -127,6 +130,10 @@
 
         </div>
     </main>
+    <footer role="contentinfo">
+		<hr>
+		&copy; Copyright 2024 Miguel Martínez & Adrià Chillón 
+	</footer>
 </body>
 
 </html>
