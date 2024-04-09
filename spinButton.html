@@ -68,7 +68,7 @@
           <p><b>input type="number"</b></p>
           <pre>
                         &lt;label for="hores"&gt;Hores →&lt;/label&gt;
-                        &lt;input type="number" id="hores" name="hores" value="1" min="0" max="23"&gt;
+                        &lt;input role="spinbutton" type="number" id="hores" name="hores" value="1" min="0" max="23"&gt;
                     </pre>
         </div>
         <div>
@@ -76,7 +76,7 @@
           <p><b>select</b></p>
           <pre>
                         &lt;label for="diesSetmana"&gt;Dies de la setmana →&lt;/label&gt;
-                        &lt;select id="diesSetmana" name="diesSetmana"&gt;
+                        &lt;select role="spinbutton" id="diesSetmana" name="diesSetmana"&gt;
                             &lt;option value="dilluns"&gt;Dilluns&lt;/option&gt;
                             &lt;option value="dimarts"&gt;Dimarts&lt;/option&gt;
                             &lt;option value="dimecres"&gt;Dimecres&lt;/option&gt;
@@ -95,7 +95,9 @@
         <h4>Input type number:</h4>
         <div>
           Escriu o escull un número:
-          <input type="number" role="spinbutton" id="hores" name="hores" value="1" min="0" max="23" />
+          <input type="number" role="spinbutton" id="hores" name="hores" value="1" min="0" max="23" ria-valuemin="0" aria-             
+          valuemax="100" aria-
+          describedby="instruccions-edad" role="spinbutton" aria-label="Spinbutton per escollir edat"/>
         </div>
         <br />
         <table style="
