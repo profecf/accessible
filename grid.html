@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/grid-movil.css" media="only screen and (max-width: 768px)">
+    <title>Grid</title>
+</head>
+<body>
+    <header>
+        <nav role="navigation">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="hamburger">
+                    <path fill="#fff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                </svg>
+            </button>
+            <ul id="contingut-nav">
+                <li role="menuitem"><a href="index.html">Principal</a></li>
+                <li role="menuitem"><a href="caracteristiques.html">Característiques</a></li>
+                <li role="menuitem"><a href="widgets.html" id="desplegable-widgets">Widgets</a></li>
+                <!--Obrir desplegable de Widgets-->
+                <ul class="desplegable" id="desplegable-contingut-widgets">
+                    <li role="menuitem"><a href="#">Acordió</a></li>
+                    <li role="menuitem"><a href="#">Alerta</a></li>
+                    <li role="menuitem"><a href="grid.html" aria-current="page">Grid</a></li>
+                </ul>
+            </ul>
+        </nav>
+        <form action="#">
+            <label for="Buscar">Cerqueu:</label>
+            <input type="text" name="text" id="text" class="text" placeholder="Introduïu el text" id="text">
+            <input type="submit" class="button" value="Cercar" id="button">
+        </form>
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="lupa" id="lupa">
+                <path fill="#fff" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+            </svg>        
+        </button>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h1>GRID</h1>
+                <p>
+                    El Grid és un concepte fonamental en el disseny gràfic i web que es refereix
+                    a una estructura invisible composta per línies horitzontals i verticals que divideixen
+                    l'espai en columnes i files. Aquestes divisions proporcionen un marc organitzatiu per
+                    a col·locar elements visuals i textuals de manera consistent i equilibrada en una composició.
+                    L'ús d'un grid facilita l'alienació, distribució i jerarquització de contingut, millorant la
+                    llegibilitat i l'estètica d'un disseny. A més, permet l'adaptabilitat a diferents dispositius
+                    i mides de pantalla en disseny web, garantint una experiència d'usuari coherent.
+                </p>
+            </article>
+            <article class="article1">
+                <div class="contingut-article1">
+                    <h2>¿Que és el GRID?</h2>
+                    <p>
+                        El Grid, és una estructura visual composta per línies horitzontals
+                        i verticals que s'utilitza en disseny gràfic i web per organitzar i alinear elements
+                        d'una composició. Aquestes línies divideixen l'espai en columnes i files, proporcionant
+                        un marc organitzatiu per distribuir i alinear imatges, text i altres elements de manera
+                        consistent. El grid ajuda a mantenir la coherència i la llegibilitat en el disseny,
+                        facilitant la creació de dissenys equilibrats i visualment atractius. A més, en disseny web,
+                        el grid és fonamental per assegurar l'adaptabilitat i la responsivitat del disseny a
+                        diferents dispositius i mides de pantalla.
+                    </p>
+                </div>
+                <aside>
+                    <img src="img/que-es-el-grid.jpg" alt="Imatge de codi CSS">
+                    <a href="https://www.pexels.com/es-es/foto/codificando-codigo-concentrarse-css-160107/" target="_blank">Imatge codi de Pexels</a>
+                </aside>
+            </article>
+            <article class="article2">
+                <aside>
+                    <img src="img/funciones-grid.jpg" alt="Imatge de codi CSS oscura">
+                    <a href="https://www.pexels.com/es-es/foto/close-up-de-texto-sobre-fondo-negro-256502/" target="_blank">Imatge codi css de Pexels</a>
+                </aside>
+                <div class="contingut-article2">
+                    <h2>Funcions de GRID</h2>
+                    <p>
+                        Utilitzant el grid, els dissenyadors poden crear composicions més equilibrades i
+                        estèticament atractives. Aquest sistema de línies verticals i horitzontals permet
+                        distribuir de manera harmònica elements visuals i textuals en un disseny, facilitant
+                        la lectura i la comprensió del contingut. A més, el grid proporciona una guia clara
+                        per a l'alienació i jerarquització d'elements, la qual cosa resulta en una presentació
+                        més professional i efectiva del missatge. Ja sigui en el disseny d'una revista,
+                        un fulletó publicitari o una pàgina web, l'ús intel·ligent del grid millora la
+                        llegibilitat, la coherència visual i l'experiència de l'usuari.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h3>Daniel Calzada Rubio | Antonio Ruiz Tapia</h3>
+        <p>2024 Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/grid.js"></script>
+    <script src="js/grid-movil.js"></script>
+</body>
+</html>
