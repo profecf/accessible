@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ca-es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>WAI-ARIA Table</title>
+		<link rel="stylesheet" href="css/estils.css">
+		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/table.css">
+		<script src="js/menu.js"></script>
+	</head>
+	<body>
+		<nav role="navigation" aria-label="Principal">
+			<ul role="menu">
+				<li role="menuitem"><a href="#" aria-current="page">Principal</a></li>
+				<li role="menuitem"><a href="caracteristiques.html">Característiques</a></li>
+				<li role="menuitem" class="has-submenu">
+					<a href="widgets.html" aria-expanded="false"> Widgets </a>
+					<ul>
+						<li><a href="acordio.html">Acordió</a></li>
+						<li><a href="alerta.html">Alerta</a></li>
+						<li><a href="table.html">Taula</a></li>
+					</ul>
+				</li>
+			</ul>
+			<form name="cerca" role="search">
+				<label for="cerca">Cerqueu:</label>
+				<input id="cerca" type="text" placeholder="Introduïu el text" />
+				<button type="submit">Cercar</button>
+			</form>
+		</nav>
+
+		<main role="main">
+			<header role="banner">
+				<h1>Table</h1>
+			</header>
+
+			<div role="table" aria-label="Estudiants" aria-describedby="students_table_desc">
+				<div id="students_table_desc">Taula amb dades aleatòries</div>
+				<div role="rowgroup">
+					<div role="row">
+						<span role="columnheader"> Nom </span>
+						<span role="columnheader"> Cognom </span>
+						<span role="columnheader"> Empresa </span>
+						<span role="columnheader"> Adreça </span>
+					</div>
+				</div>
+				<div role="rowgroup">
+					<div role="row">
+						<span role="cell"> Fred </span>
+						<span role="cell"> Jackson </span>
+						<span role="cell"> Acme, Inc. </span>
+						<span role="cell"> 123 Broad St. </span>
+					</div>
+					<div role="row">
+						<span role="cell"> Sara </span>
+						<span role="cell"> James </span>
+						<span role="cell"> Acme, Inc. </span>
+						<span role="cell"> 123 Broad St. </span>
+					</div>
+					<div role="row">
+						<span role="cell"> Ralph </span>
+						<span role="cell"> Jefferson </span>
+						<span role="cell"> XYZ, Inc. </span>
+						<span role="cell"> 456 Main St. </span>
+					</div>
+					<div role="row">
+						<span role="cell"> Nancy </span>
+						<span role="cell"> Jensen </span>
+						<span role="cell"> XYZ, Inc. </span>
+						<span role="cell"> 456 Main St. </span>
+					</div>
+				</div>
+			</div>
+
+			<h2 role="infoTitle">Accessibilitat</h2>
+
+			<p aria-label="Resum de les etiquetes ARIA a la taula d'estudiants">
+				La taula d'estudiants està estructurada utilitzant etiquetes ARIA per millorar l'accessibilitat. Cada fila té un contenedor amb el rol "row", mentre que cada cel·la pot tenir un rol de
+				"columnheader", "rowheader" o "cell" segons la informació que conté. També s'utilitzen atributs com aria-labelledby, aria-describedby i aria-sort per proporcionar informació addicional sobre
+				la taula i les seves parts.
+			</p>
+		</main>
+
+		<footer role="contentinfo">
+			<hr />
+			&copy; Copyright 2024 | Andrei
+		</footer>
+	</body>
+</html>
