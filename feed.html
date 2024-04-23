@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementació del Feed</title>
+    <link rel="stylesheet" href="css/feed.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/estils.css">
+    <script src="js/menu.js"></script>
+</head>
+
+<body>
+	<nav role="navigation" aria-label="Principal">
+		<ul role="menu">
+			<li role="menuitem"><a href="index.html" aria-current="page" >Principal</a></li>
+			<li role="menuitem"><a href="caracteristiques.html">Característiques</a></li>
+			<li role="menuitem" class="has-submenu">
+                <a href="widgets.html" aria-expanded="false">
+                    Widgets
+                </a>
+                <ul>
+                    <li role="menuitem"><a href="acordio.html">Acordió</a></li>
+                    <li role="menuitem"><a href="alerta.html">Alerta</a></li>
+                    <li role="menuitem"><a href="disclosure.html">Disclosure</a></li>
+                    <li role="menuitem"><a href="tree-view.html">Vista d'arbre</a></li>
+					<li role="menuitem"><a href="feed.html">Feed</a></li>
+                </ul>
+            </li>
+		</ul>
+		<form name="cerca" role="search">
+			<label for="cerca">Cerqueu:</label>
+			<input id="cerca" type="text" placeholder="Introduïu el text">
+			<button type="submit">Cercar</button>
+		</form>
+	</nav>
+    
+    <main id="main" role="main">
+        <article>
+            <h1>Com millora el feed l'accessibilitat i la interacció</h1>
+            <p>El feed millora l'accessibilitat i la interacció amb les pàgines web, oferint una navegació
+                eficient per contingut dinàmic. A més de garantir la càrrega automàtica de contingut, el
+                feed posa especial atenció a la interacció amb el teclat i l'ús de rols, estats i propietats
+                WAI-ARIA per millorar l'experiència d'usuari, especialment per a aquells que utilitzen
+                tecnologies d'assistència.</p>
+        </article>
+
+        <section aria-labelledby="keyboard-interaction">
+            <h2 id="keyboard-interaction">Interacció amb el Teclat</h2>
+            <ul>
+                <li><strong>Page Down:</strong> Mou el focus a l'article següent.</li>
+                <li><strong>Page Up:</strong> Mou el focus a l'article anterior.</li>
+                <li><strong>Control + End:</strong> Mou el focus al primer element enfocable després del
+                    feed.</li>
+                <li><strong>Control + Home:</strong> Mou el focus al primer element enfocable abans del
+                    feed.</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="aria-roles">
+            <h2 id="aria-roles">Rols, Estats i Propietats WAI-ARIA</h2>
+            <ul>
+                <li>L'element que conté el conjunt d'articles del feed té el rol de feed.</li>
+                <li>Si el feed té una etiqueta visible, l'element de feed té aria-labelledby referint a l'element que
+                    conté el títol. D'altra banda, l'element de feed té una etiqueta especificada amb aria-label.</li>
+                <li>Cada unitat de contingut en un feed està continguda en un element amb rol article. Tot el contingut
+                    dins del feed està contingut en un element article.</li>
+                <li>Cada element article té aria-labelledby referint a elements dins de l'article que poden servir com a
+                    etiqueta distintiva.</li>
+            </ul>
+        </section>
+
+        <h2>Exemple de feed:</h2>
+        <div id="products" role="feed" aria-label="Llista de productes" aria-busy="false">
+            
+            <div class="card" role="article" aria-posinset="1" tabindex="0" aria-labelledby="Llista de productes"
+                aria-describedby="card-title card-subtitle card-price card-img" aria-setsize="4">
+                <div class="card-img">
+                    <div class="img"></div>
+                </div>
+                <div class="card-title">Pantalons Vaquers</div>
+                <div class="card-subtitle">Estil casual per al dia a dia. Disponible en diversos colors i talles.</div>
+                <hr class="card-divider">
+                <div class="card-footer">
+                    <div class="card-price"><span>€</span> 39.99</div>
+                    <button class="card-btn">Veure Detalls</button>
+                </div>
+            </div>
+
+            <div class="card" role="article" aria-posinset="2" tabindex="0" aria-labelledby="Llista de productes"
+                aria-describedby="card-title card-subtitle card-price card-img" aria-setsize="4">
+                <div class="card-img">
+                    <div class="img"></div>
+                </div>
+                <div class="card-title">Samarreta</div>
+                <div class="card-subtitle">Perfecta per a l'estiu. Material transpirable i còmode.</div>
+                <hr class="card-divider">
+                <div class="card-footer">
+                    <div class="card-price"><span>€</span> 19.99</div>
+                    <button class="card-btn">Veure Detalls</button>
+                </div>
+            </div>
+
+            <div class="card" role="article" aria-posinset="3" tabindex="0" aria-labelledby="Llista de productes"
+                aria-describedby="card-title card-subtitle card-price card-img" aria-setsize="4">
+                <div class="card-img">
+                    <div class="img"></div>
+                </div>
+                <div class="card-title">Sabatilles Esportives</div>
+                <div class="card-subtitle">Ideal per córrer o fer exercici. Disseny modern i ergonòmic.</div>
+                <hr class="card-divider">
+                <div class="card-footer">
+                    <div class="card-price"><span>€</span> 49.99</div>
+                    <button class="card-btn">Veure Detalls</button>
+                </div>
+            </div>
+
+            <div class="card" role="article" aria-posinset="4" tabindex="0" aria-labelledby="Llista de productes"
+                aria-describedby="card-title card-subtitle card-price card-img" aria-setsize="4">
+                <div class="card-img">
+                    <div class="img"></div>
+                </div>
+                <div class="card-title">Jaqueta d'Hivern</div>
+                <div class="card-subtitle">Us manté calent en els dies freds. Resistenta al vent i a la pluja.</div>
+                <hr class="card-divider">
+                <div class="card-footer">
+                    <div class="card-price"><span>€</span> 79.99</div>
+                    <button class="card-btn">Veure Detalls</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer role="contentinfo">
+		<hr>
+		&copy; Copyright 2024 Miguel Martínez & Adrià Chillón 
+	</footer>
+</body>
+
+</html>

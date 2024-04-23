@@ -72,6 +72,7 @@ section img {
     position: absolute;
     width: 1px;
     white-space: nowrap;
+<<<<<<< HEAD
 }
 
 div.full-width {
@@ -142,4 +143,6 @@ div.full-width {
 checkbox-container label {
     display: block;
     margin-bottom: 5px;
+=======
+>>>>>>> 29f1ea45bc3c2a8f4ed739cac3f602570bafc546
 }
