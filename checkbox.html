@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox Accessibility</title>
+    <link rel="stylesheet" href="css/estils.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="js/menu.js"></script>
+</head>
+
+<body>
+    <nav role="navigation" aria-label="Principal">
+        <ul role="menu">
+            <li role="menuitem"><a href="#" aria-current="page" role="menuitem">Principal</a></li>
+            <li role="menuitem"><a href="caracteristiques.html" role="menuitem">Característiques</a></li>
+            <li role="menuitem" class="has-submenu">
+                <a href="widgets.html" aria-expanded="false" role="menuitem">Widgets</a>
+                <ul>
+                    <li><a href="acordio.html" role="menuitem">Acordió</a></li>
+                    <li><a href="alerta.html" role="menuitem">Alerta</a></li>
+                    <li><a href="checkbox.html" aria-current="page" role="menuitem">Checkbox</a></li>
+                </ul>
+            </li>
+        </ul>
+        <form name="cerca" role="search">
+            <label for="cerca">Cerqueu:</label>
+            <input id="cerca" type="text" placeholder="Introduïu el text">
+            <button type="submit">Cercar</button>
+        </form>
+    </nav>
+
+    <main id="main" role="main">
+        <article>
+            <h1 style="text-align: center;">Com millora la accessibilitat dels checkbox</h1>
+            <p style="text-align: center;">Els checkbox milloren l'accessibilitat oferint una manera clara i fàcil per
+                als usuaris de seleccionar opcions en formularis i altres components interactius. És essencial garantir
+                que els checkbox siguin fàcilment identificables, seleccionables
+                i comprensibles per a tots els usuaris, inclosos aquells que utilitzen tecnologies d'assistència.</p>
+        </article>
+
+        <section aria-labelledby="keyboard-interaction">
+            <h2 id="keyboard-interaction" style="text-align: center;">Interacció amb el Teclat</h2>
+            <ul>
+                <li><strong>Tab:</strong> Mou el focus al següent checkbox.</li>
+                <li><strong>Shift + Tab:</strong> Mou el focus al checkbox anterior.</li>
+                <li><strong>Barra espaiadora o Enter:</strong> Marca o desmarca el checkbox enfocat.</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="aria-roles">
+            <h2 id="aria-roles" style="text-align: center;">Rols i les Propietats WAI-ARIA</h2>
+            <ul>
+                <li>Cada checkbox ha de tenir l'atribut role="checkbox" per indicar la seva funció.</li>
+                <li>L'atribut aria-checked s'utilitza per indicar si el checkbox està marcat o no.</li>
+                <li>Els checkbox haurien de tenir una etiqueta associada utilitzant l'atribut aria-labelledby o
+                    aria-label per a una millor comprensió.</li>
+                <li>Es pot utilitzar l'atribut aria-describedby per proporcionar una descripció addicional del checkbox
+                    si és necessari.</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="checkbox-example">
+            <h2 id="checkbox-example" style="text-align: center;">Exemple de Checkbox</h2>
+            <div class="checkbox-container">
+                <label class="custom-checkbox" for="hotel-reservation">Reservar habitació d'hotel
+                    <input id="hotel-reservation" type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                < label class="custom-checkbox" for="service-subscription">Confirmar subscripció al servei
+                    <input id="service-subscription" type="checkbox">
+                    <span class="checkmark"></span>
+                    </label>
+                    <label class="custom-checkbox" for="privacy-policy">Accepto la politica de privadesa i Avis Legal
+                        <input id="privacy-policy" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
