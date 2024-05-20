@@ -52,19 +52,19 @@ window.onload = function () {
 
              if (inputSelected.value == "Radio Buttons") {
 
-                 console.log(1);
+
 
              }
 
              if (inputSelected.value == "Slider") {
 
-                 console.log(2);
+
 
              }
 
              if (inputSelected.value == "Acordeón") {
 
-                 console.log(3);
+
 
              }
 
